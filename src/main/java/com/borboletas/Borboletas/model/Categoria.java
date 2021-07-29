@@ -23,7 +23,9 @@ import javax.validation.constraints.Size;
 @Entity
 @Table(name = "categoria")
 public class Categoria {
-	
+	/*
+	 * Teste
+	 */
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
