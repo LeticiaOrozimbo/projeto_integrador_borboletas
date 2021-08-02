@@ -5,7 +5,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import javax.validation.constraints.NotNull;
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
 /**
@@ -21,30 +21,16 @@ import javax.validation.constraints.Size;
  */
 
 @Entity
-@Table(name = "categoria")
+@Table(name = "tb_categoria")
 public class Categoria {
-	/*
-	 * Teste
-	 */
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	@NotNull
-	@Size(min = 10, max = 100)
-	private String servicos_profissionais;
-	
-	@NotNull
-	@Size(min = 10, max = 100)
-	private String beleza;
-	
-	@NotNull
-	@Size(min = 10, max = 100)
-	private String moda;
-	
-	@NotNull
-	@Size(min = 10, max = 100)
-	private String acessorios;
+	@NotBlank
+	@Size(min = 3, max = 500)
+	private String descricao;
 
 	public Long getId() {
 		return id;
@@ -54,38 +40,11 @@ public class Categoria {
 		this.id = id;
 	}
 
-	public String getServicos_profissionais() {
-		return servicos_profissionais;
+	public String getDescricao() {
+		return descricao;
 	}
 
-	public void setServicos_profissionais(String servicos_profissionais) {
-		this.servicos_profissionais = servicos_profissionais;
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
 	}
-
-	public String getBeleza() {
-		return beleza;
-	}
-
-	public void setBeleza(String beleza) {
-		this.beleza = beleza;
-	}
-
-	public String getModa() {
-		return moda;
-	}
-
-	public void setModa(String moda) {
-		this.moda = moda;
-	}
-
-	public String getAcessorios() {
-		return acessorios;
-	}
-
-	public void setAcessorios(String acessorios) {
-		this.acessorios = acessorios;
-	}
-	
-	
-
 }
