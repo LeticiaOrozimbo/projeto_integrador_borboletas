@@ -5,6 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.Digits;
@@ -40,7 +41,6 @@ public class Produto {
 	
 	@NotNull
 	private Integer quantidade;
-	
 	
 	@ManyToOne
 	@JsonIgnoreProperties("produto")
@@ -79,5 +79,11 @@ public class Produto {
 		this.quantidade = quantidade;
 	}
 
-	
+	public Categoria getCategoria() {
+		return categoria;
+	}
+
+	public void setCategoria(Categoria categoria) {
+		this.categoria = categoria;
+	}
 }
