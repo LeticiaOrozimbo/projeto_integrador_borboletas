@@ -20,7 +20,9 @@ import javax.validation.constraints.Size;
 @Entity
 @Table(name = "tb_usuario")
 public class Usuario {
-	
+	/*
+	 * Isso Aqui é um teste pra apagar depois
+	 */
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
