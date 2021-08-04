@@ -19,15 +19,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.borboletas.Borboletas.model.Categoria;
-import com.borboletas.Borboletas.repository.CategoriaRepository;
+import com.borboletas.Borboletas.repository.CategoriaRepositorio;
 
 @RestController
 @RequestMapping("/categoria")
 @CrossOrigin("*")
-public class CategoriaController {
+public class CategoriaControle {
 	
 	@Autowired
-	private CategoriaRepository repository;
+	private CategoriaRepositorio repository;
 	
 	@GetMapping
 	public ResponseEntity<List<Categoria>> buscarTodos (){
