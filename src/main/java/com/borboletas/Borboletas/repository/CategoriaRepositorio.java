@@ -8,6 +8,6 @@ import org.springframework.stereotype.Repository;
 import com.borboletas.Borboletas.model.Categoria;
 
 @Repository
-public interface CategoriaRepository extends JpaRepository<Categoria, Long> {
+public interface CategoriaRepositorio extends JpaRepository<Categoria, Long> {
 	public List<Categoria> findAllByDescricaoContainingIgnoreCase(String descricao);
 }

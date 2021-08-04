@@ -1,12 +1,18 @@
 package com.borboletas.Borboletas.model;
 
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 /**
  * @author Jaqueline,
@@ -19,7 +25,6 @@ import javax.validation.constraints.Size;
  * @table Nome de nossa tabela principal
  *
  */
-
 @Entity
 @Table(name = "tb_categoria")
 public class Categoria {
@@ -31,6 +36,10 @@ public class Categoria {
 	@NotBlank
 	@Size(min = 3, max = 500)
 	private String descricao;
+	
+	@OneToMany(mappedBy = "categoria", cascade = CascadeType.ALL)
+	@JsonIgnoreProperties("categoria")
+	private List<Produto> produto;
 
 	public Long getId() {
 		return id;
