@@ -21,7 +21,7 @@ import javax.validation.constraints.Size;
 @Table(name = "tb_usuario")
 public class Usuario {
 	/*
-	 * Isso Aqui é um teste pra apagar depois
+	 * Isto é outro teste 
 	 */
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
