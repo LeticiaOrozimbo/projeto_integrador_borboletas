@@ -64,7 +64,7 @@ public class UsuarioControle {
 			return ResponseEntity.status(400).build();
 		}
     }
-	@DeleteMapping("/{id}")
+	@DeleteMapping("/{id}")//Esta funcionando
 	public void deletar (@PathVariable Long id) {
 		repositorio.deleteById(id);
    }
