@@ -2,15 +2,18 @@ package com.borboletas.Borboletas.model;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+/**
+ * Classe criada para login do usuario
+ * @author Borboletas
+ * @since 1.0
+ * 
+ */
 public class UsuarioDTO {
 	
-	@NotNull
 	private Long id;
-	
-	
+
 	private String nome;
 	
 	@NotBlank(message = "Necessário e-mail")

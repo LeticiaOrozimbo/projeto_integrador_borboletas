@@ -1,4 +1,4 @@
-package com.borboletas.Borboletas.controller;
+package com.borboletas.Borboletas.controlador;
 
 import java.util.List;
 import java.util.Optional;
@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.borboletas.Borboletas.model.Categoria;
-import com.borboletas.Borboletas.repository.CategoriaRepositorio;
+import com.borboletas.Borboletas.repositorio.CategoriaRepositorio;
 
 @RestController
 @RequestMapping("/categoria")

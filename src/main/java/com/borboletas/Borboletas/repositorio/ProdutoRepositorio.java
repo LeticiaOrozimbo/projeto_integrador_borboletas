@@ -1,4 +1,4 @@
-package com.borboletas.Borboletas.repository;
+package com.borboletas.Borboletas.repositorio;
 
 import java.util.List;
 

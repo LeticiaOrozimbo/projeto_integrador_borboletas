@@ -1,4 +1,4 @@
-package com.borboletas.Borboletas.controller;
+package com.borboletas.Borboletas.controlador;
 
 import java.util.List;
 
@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.borboletas.Borboletas.model.Produto;
-import com.borboletas.Borboletas.repository.ProdutoRepositorio;
+import com.borboletas.Borboletas.repositorio.ProdutoRepositorio;
 
 @RestController
 @RequestMapping("/produto")
@@ -56,10 +56,4 @@ public class ProdutoControle {
 	public void deletar (@PathVariable Long id) {
 		repositorio.deleteById(id);
 	}
-	
-	
-	
-	
-	
-	
 }
