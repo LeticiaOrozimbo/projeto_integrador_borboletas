@@ -25,6 +25,12 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
  * @table Nome de nossa tabela principal
  *
  */
+<<<<<<< HEAD
+=======
+
+/*Vai que vaiii! */
+
+>>>>>>> 42e34f380ab4e3fddfd1d9d95c8c11e05b98d4aa
 @Entity
 @Table(name = "tb_categoria")
 public class Categoria {
