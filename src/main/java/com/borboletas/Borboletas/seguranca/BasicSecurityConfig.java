@@ -12,31 +12,29 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 @EnableWebSecurity
-public class BasicSecurityConfig extends WebSecurityConfigurerAdapter{
-	
+public class BasicSecurityConfig extends WebSecurityConfigurerAdapter {
+
 	@Autowired
 	private UserDetailsServiceImplements service;
-	
+
 	@Override
-	protected void configure(AuthenticationManagerBuilder auth)throws Exception{
-		auth.inMemoryAuthentication()
-		.withUser("admin").password(passwordEnconder().encode("admin")).authorities("ROLE_ADMIN");
+	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+		auth.inMemoryAuthentication().withUser("admin").password(passwordEnconder().encode("admin"))
+				.authorities("ROLE_ADMIN");
 		auth.userDetailsService(service);
 	}
+
 	@Bean
 	public PasswordEncoder passwordEnconder() {
 		return new BCryptPasswordEncoder();
 	}
+
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		http.authorizeRequests()
-		.antMatchers("/**").permitAll()
-		.antMatchers(HttpMethod.POST, "/api/v1/usuario/cadastrar").permitAll()
-		.antMatchers(HttpMethod.PUT, "/api/v1/usuario/logar").permitAll()
- 		.anyRequest().authenticated()
- 		.and().httpBasic()
- 		.and().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
- 		.and().cors()
- 		.and().csrf().disable();
-    }
+		http.authorizeRequests().antMatchers("/**").permitAll()
+				.antMatchers(HttpMethod.POST, "/api/v1/usuario/cadastrar").permitAll()
+				.antMatchers(HttpMethod.PUT, "/api/v1/usuario/autenticar").permitAll().anyRequest().authenticated()
+				.and().httpBasic().and().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+				.and().cors().and().csrf().disable();
+	}
 }
