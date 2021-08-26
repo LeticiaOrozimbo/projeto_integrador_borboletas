@@ -1,0 +1,22 @@
+ul.social-network{
+    list-style: none;
+    padding: 0;
+}
+ul.social-network li{
+    display: inline;
+    margin: 0;
+    padding: 5px;
+}
+
+.font{
+    font-family: 'Comfortaa', cursive;
+}
+
+.barra{
+    background-color: #4e4e4e;
+}
+
+.fa{
+    font-size: 35pt;
+    padding: 10px;
+}
