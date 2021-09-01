@@ -8,6 +8,11 @@ import { RodapeComponent } from './rodape/rodape.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { IsobreNosComponent } from './isobre-nos/isobre-nos.component';
 import { ContatoComponent } from './contato/contato.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { EntrarComponent } from './entrar/entrar.component';
+import { CadastrarComponent } from './cadastrar/cadastrar.component';
+
 
 @NgModule({
   declarations: [
@@ -16,11 +21,15 @@ import { ContatoComponent } from './contato/contato.component';
     RodapeComponent,
     InicioComponent,
     IsobreNosComponent,
-    ContatoComponent
+    ContatoComponent,
+    EntrarComponent,
+    CadastrarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
