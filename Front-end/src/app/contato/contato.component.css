@@ -1,0 +1,8 @@
+.cor-contato{
+    background: rgb(198,22,147);
+    background: linear-gradient(90deg, rgba(198,22,147,1) 37%, rgba(0,173,249,1) 77%, rgba(0,170,249,1) 100%);
+
+}
+.fonte{
+    font-family: 'Comfortaa', cursive;
+}
