@@ -38,3 +38,12 @@ a{
 .fs-10{
   font-size: 10pt;
   }
+
+  .radius{
+    border-radius: 20px 20px 20px 20px;
+  
+  }
+
+  .tambtn{
+    width: 100%;
+  }
