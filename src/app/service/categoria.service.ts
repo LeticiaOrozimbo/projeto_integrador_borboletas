@@ -15,11 +15,11 @@ export class CategoriaService {
     headers: new HttpHeaders().set('Authorization', environment.token)
   }
 
-  getAllCategoria(): Observable<Categoria[]>{
+  buscarTodos(): Observable<Categoria[]>{
     return this.http.get<Categoria[]>('https://appborboletas.herokuapp.com/categoria', this.token)
   }
 
-  postCategoria(categoria: Categoria): Observable<Categoria>{
+  salvarCategoria(categoria: Categoria): Observable<Categoria>{
     return this.http.post<Categoria>('https://appborboletas.herokuapp.com/categoria/criar', categoria, this.token)
   }
 

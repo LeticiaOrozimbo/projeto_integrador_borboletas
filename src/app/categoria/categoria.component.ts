@@ -28,7 +28,7 @@ export class CategoriaComponent implements OnInit {
   }
 
   findAllCategorias(){
-    this.categoriaService.getAllCategoria().subscribe((resp: Categoria[]) => {
+    this.categoriaService.buscarTodos().subscribe((resp: Categoria[]) => {
       this.listaCategorias = resp
       console.log("lista de categoria"+ JSON.stringify(this.listaCategorias))
     })
@@ -36,7 +36,7 @@ export class CategoriaComponent implements OnInit {
 
   cadastrar(){
     console.log("cadastrar categoria"+ JSON.stringify(this.categoria))
-     this.categoriaService.postCategoria(this.categoria).subscribe((resp: Categoria)=>{
+     this.categoriaService.salvarCategoria(this.categoria).subscribe((resp: Categoria)=>{
        this.categoria = resp
        alert('Categoria cadastrada com sucesso!')
        this.findAllCategorias()
