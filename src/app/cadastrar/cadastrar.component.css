@@ -7,4 +7,25 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  .bg-back{
+    background-color: rgb(223, 223, 223);
   
+}
+.radius{
+  border-radius: 20px 20px 20px 20px;
+}
+  .bg-color{
+    background-color: #7756b8;
+    
+  }
+  button{
+    color: white;
+  }
+  .ft{
+    font-family: 'Poppins', sans-serif;
+  }
+   
+h4{
+font-weight: bold;
+  }
