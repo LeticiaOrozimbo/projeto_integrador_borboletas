@@ -31,7 +31,7 @@ export class EntrarComponent implements OnInit {
       environment.id = this.usuarioDTO.id
   
       this.usuarioDTO.foto
-
+      console.log("token "+environment.token)
       alert('Logado com sucesso!')
       this.router.navigate(['/inicio'])
     }, erro =>{
