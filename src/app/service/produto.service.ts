@@ -1,0 +1,43 @@
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment.prod';
+import { Produto } from '../model/Produto';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class ProdutoService {
+
+  constructor(
+    private http: HttpClient,
+
+  ) { }
+
+  token = {headers: new HttpHeaders().set('Authorization', environment.token) } 
+
+  buscarTodos(): Observable<Produto[]>{
+    return this.http.get<Produto[]>('https://appborboletas.herokuapp.com/produto', this.token)
+  }
+
+  bucarPorId(id: number): Observable<Produto>{
+    return this.http.get<Produto>(`https://appborboletas.herokuapp.com/produto/${id}`, this.token)
+  }
+
+  buscarPorNome(nome: string): Observable<Produto[]>{
+    return this.http.get<Produto[]>(`https://appborboletas.herokuapp.com/produto/nome/${nome}`, this.token)
+  }
+
+  criandoProduto(produto: Produto) : Observable<Produto>{
+    return this.http.post<Produto>('https://appborboletas.herokuapp.com/produto/criar', Produto, this.token)
+  }
+
+  atualizarProduto(produto: Produto): Observable<Produto>{
+    return this.http.put<Produto>('https://appborboletas.herokuapp.com/produto/atualizar', Produto, this.token)
+  }
+
+  deletarPorId(id: number){
+    return this.http.delete(`https://appborboletas.herokuapp.com/produto/deletar/${id}`, this.token)
+  }
+
+}

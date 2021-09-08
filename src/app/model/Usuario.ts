@@ -1,3 +1,5 @@
+import { Produto } from "./Produto"
+
 export class Usuario{
     public id: number
     public nome: string
@@ -5,5 +7,6 @@ export class Usuario{
     public usuario: string
     public tipo: string
     public foto: string
+    public produtos: Produto[]
     
 }
