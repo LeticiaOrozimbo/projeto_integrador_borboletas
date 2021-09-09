@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { RodapeComponent } from './rodape/rodape.component';
 import { InicioComponent } from './inicio/inicio.component';
-import { IsobreNosComponent } from './isobre-nos/isobre-nos.component';
 import { ContatoComponent } from './contato/contato.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
@@ -21,7 +20,6 @@ import { CategoriaComponent } from './categoria/categoria.component';
     MenuComponent,
     RodapeComponent,
     InicioComponent,
-    IsobreNosComponent,
     ContatoComponent,
     EntrarComponent,
     CadastrarComponent,

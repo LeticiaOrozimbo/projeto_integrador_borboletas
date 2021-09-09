@@ -40,20 +40,18 @@ export class InicioComponent implements OnInit {
 
 
   ngOnInit() {
-    window.scroll(0,0)
+    window.scroll(0, 0)
 
-    if(environment.token == ''){
+    if (environment.token == '') {
       this.router.navigate(['/entrar'])
     }
 
     this.buscarTodos()
     this.buscarTodosProdutos()
 
-    
   }
 
-  
-  buscarTodos(){
+  buscarTodos() {
     this.categoriaService.buscarTodos().subscribe((resp: Categoria[]) => {
       this.listaCategoria = resp
     })
@@ -79,15 +77,15 @@ export class InicioComponent implements OnInit {
   //   this.authService.getByIdUser(this.idUser).subscribe((resp: User) => {
   //     this.user = resp
   //   })
-  
 
-  buscarTodosProdutos(){
+
+  buscarTodosProdutos() {
     this.produtoService.buscarTodos().subscribe((resp: Produto[]) => {
       this.listaProduto = resp
     })
   }
 
-  cadastrar(){
+  cadastrar() {
     this.categoria.id = this.idCategoria
     this.produto.categoria = this.categoria
 
@@ -101,8 +99,8 @@ export class InicioComponent implements OnInit {
     })
   }
 
-  bucarPorId(){
-    if(this.nomeProduto == ''){
+  bucarPorId() {
+    if (this.nomeProduto == '') {
       this.buscarTodos()
     } else {
       this.produtoService.buscarPorNome(this.nomeProduto).subscribe((resp: Produto[]) => {
@@ -112,5 +110,3 @@ export class InicioComponent implements OnInit {
   }
 
 }
-
-
