@@ -24,22 +24,22 @@ export class CategoriaComponent implements OnInit {
       this.router.navigate(['/entrar'])
     }
 
-    this.buscarTodos()
+    this. pesquisarTodos()
   }
 
-  buscarTodos(){
+  pesquisarTodos(){
     this.categoriaService.buscarTodos().subscribe((resp: Categoria[]) => {
       this.listaCategorias = resp
       console.log("lista de categoria"+ JSON.stringify(this.listaCategorias))
     })
   }
 
-  salvarCategoria(){
+  cadastrarCategoria(){
     console.log("cadastrar categoria"+ JSON.stringify(this.categoria))
      this.categoriaService.salvarCategoria(this.categoria).subscribe((resp: Categoria)=>{
        this.categoria = resp
        alert('Categoria cadastrada com sucesso!')
-       this.buscarTodos()
+       this.pesquisarTodos()
        this.categoria = new Categoria()
      })
   }
