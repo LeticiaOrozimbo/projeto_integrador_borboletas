@@ -21,47 +21,49 @@
             </div>
   
           </div>
+
         </div>
-  
       </div>
+
     </div>
-  
   </div>
-  
-  <div class="container">
-  
-    <div class="row mt-5">
-      <div class="col-md-12">
-        <h2 class="text-center">Todas as categorias</h2>
-      </div>
+
+</div>
+
+<div class="container">
+
+  <div class="row mt-5">
+    <div class="col-md-12">
+      <h2 class="text-center">Todas as categorias</h2>
     </div>
-  
-    <div class="row mt-3 mb-5 d-flex justify-content-center">
-      <div class="col-md-6">
-  
-        <table class="table table-hover">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Descrição</th>
-              <th scope="col" class="text-right">Modificações</th>
-  
-            </tr>
-          </thead>
-  
-          <tbody>
-            <tr *ngFor='let item of listaCategorias'>
-              <th>{{item.id}}</th>
-              <td>{{item.descricao}}</td>
-              <td class="d-flex justify-content-end">
-                <button class="btn btn-info mr-3">Editar</button>
-                <button class="btn btn-danger">Apagar</button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-  
-      </div>
-    </div>
-  
   </div>
+
+  <div class="row mt-3 mb-5 d-flex justify-content-center">
+    <div class="col-md-6">
+
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Descrição</th>
+            <th scope="col" class="text-right">Modificações</th>
+
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr *ngFor='let item of listaCategorias'>
+            <th>{{item.id}}</th>
+            <td>{{item.descricao}}</td>
+            <td class="d-flex justify-content-end">
+              <button class="btn btn-info mr-3" [routerLink]="['/categoria-edit', item.id]">Editar</button>
+              <button class="btn btn-danger" [routerLink]="['/categoria-delete', item.id]">Apagar</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+
+</div>
