@@ -24,22 +24,39 @@ export class CategoriaComponent implements OnInit {
       this.router.navigate(['/entrar'])
     }
 
-    this.buscarTodos()
+    this.findAllCategorias()  
   }
 
-  buscarTodos(){
-    this.categoriaService.buscarTodos().subscribe((resp: Categoria[]) => {
+  // buscarTodos(){
+  //   this.categoriaService.buscarTodos().subscribe((resp: Categoria[]) => {
+  //     this.listaCategorias = resp
+  //     console.log("lista de categoria"+ JSON.stringify(this.listaCategorias))
+  //   })
+  // }
+
+  // salvarCategoria(){
+  //   console.log("cadastrar categoria"+ JSON.stringify(this.categoria))
+  //    this.categoriaService.salvarCategoria(this.categoria).subscribe((resp: Categoria)=>{
+  //      this.categoria = resp
+  //      alert('Categoria cadastrada com sucesso!')
+  //      this.buscarTodos()
+  //      this.categoria = new Categoria()
+  //    })
+  // }
+
+  findAllCategorias(){
+    this.categoriaService.getAllCategoria().subscribe((resp: Categoria[]) => {
       this.listaCategorias = resp
       console.log("lista de categoria"+ JSON.stringify(this.listaCategorias))
     })
   }
 
-  salvarCategoria(){
+  cadastrar(){
     console.log("cadastrar categoria"+ JSON.stringify(this.categoria))
-     this.categoriaService.salvarCategoria(this.categoria).subscribe((resp: Categoria)=>{
+     this.categoriaService.postCategoria(this.categoria).subscribe((resp: Categoria)=>{
        this.categoria = resp
        alert('Categoria cadastrada com sucesso!')
-       this.buscarTodos()
+       this.findAllCategorias()
        this.categoria = new Categoria()
      })
   }

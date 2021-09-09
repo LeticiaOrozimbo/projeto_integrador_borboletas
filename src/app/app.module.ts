@@ -12,7 +12,8 @@ import { FormsModule } from '@angular/forms';
 import { EntrarComponent } from './entrar/entrar.component';
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { CategoriaComponent } from './categoria/categoria.component';
-
+import { CategoriaEditComponent } from './edit/categoria-edit/categoria-edit.component';
+import { CategoriaDeleteComponent } from './delete/categoria-delete/categoria-delete.component';
 
 @NgModule({
   declarations: [
@@ -23,8 +24,11 @@ import { CategoriaComponent } from './categoria/categoria.component';
     ContatoComponent,
     EntrarComponent,
     CadastrarComponent,
-    CategoriaComponent
-  ],
+    CategoriaComponent,
+    CategoriaEditComponent,
+    CategoriaEditComponent,
+    CategoriaDeleteComponent
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
