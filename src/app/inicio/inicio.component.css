@@ -93,3 +93,9 @@ header {
     text-decoration: none;
     font-size: 14px;
 }
+
+/* Sobre o Time de desenvolvimento */
+
+.card-img-borboletas {
+    border: solid #333;
+}
