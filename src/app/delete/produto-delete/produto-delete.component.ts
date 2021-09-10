@@ -17,7 +17,7 @@ export class ProdutoDeleteComponent implements OnInit {
   constructor(
     private router: Router,
     private route: ActivatedRoute,
-    private produtoService: ProdutoService,
+    private produtoService: ProdutoService
 
   ) { }
 
