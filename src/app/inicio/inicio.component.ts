@@ -20,7 +20,7 @@ export class InicioComponent implements OnInit {
   buscarTodosProdutos() {
     this.produtoService.buscarTodosProdutos().subscribe((resp: Produto[]) => {
       this.listaProduto = resp
-      console.log("lista produto"+this.listaProduto)
+      console.log("lista produto" + this.listaProduto)
     })
   }
 
