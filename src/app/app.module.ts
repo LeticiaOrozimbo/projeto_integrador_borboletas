@@ -14,6 +14,7 @@ import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { CategoriaComponent } from './categoria/categoria.component';
 import { CategoriaEditComponent } from './edit/categoria-edit/categoria-edit.component';
 import { CategoriaDeleteComponent } from './delete/categoria-delete/categoria-delete.component';
+import { ProdutoComponent } from './produto/produto.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { CategoriaDeleteComponent } from './delete/categoria-delete/categoria-de
     CategoriaComponent,
     CategoriaEditComponent,
     CategoriaEditComponent,
-    CategoriaDeleteComponent
+    CategoriaDeleteComponent,
+    ProdutoComponent
     ],
   imports: [
     BrowserModule,
