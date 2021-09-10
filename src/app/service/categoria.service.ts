@@ -16,22 +16,22 @@ export class CategoriaService {
   }
 
   getByIdCategoria(id: number): Observable<Categoria>{
-    return this.http.get<Categoria>(`https://borboletas.herokuapp.com/categoria/${id}`, this.token)
+    return this.http.get<Categoria>(`https://borboletasteste.herokuapp.com/categoria/${id}`, this.token)
   }
 
   getAllCategoria(): Observable<Categoria[]> {
-    return this.http.get<Categoria[]>('https://borboletas.herokuapp.com/categoria', this.token)
+    return this.http.get<Categoria[]>('https://borboletasteste.herokuapp.com/categoria', this.token)
   }
 
   postCategoria(categoria: Categoria): Observable<Categoria> {
-    return this.http.post<Categoria>('https://borboletas.herokuapp.com/categoria/criar', categoria, this.token)
+    return this.http.post<Categoria>('https://borboletasteste.herokuapp.com/categoria/criar', categoria, this.token)
   }
 
   putCategoria(categoria: Categoria): Observable<Categoria> {
-    return this.http.put<Categoria>('https://borboletas.herokuapp.com/categoria/atualizar', categoria, this.token)
+    return this.http.put<Categoria>('https://borboletasteste.herokuapp.com/categoria/atualizar', categoria, this.token)
   }
   deleteCategoria(id: number) {
-    return this.http.delete(`https://borboletas.herokuapp.com/categoria/deletar/${id}`, this.token)
+    return this.http.delete(`https://borboletasteste.herokuapp.com/categoria/deletar/${id}`, this.token)
   }
 
 }
