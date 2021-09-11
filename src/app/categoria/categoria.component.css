@@ -1,0 +1,11 @@
+.barra{
+    background: rgb(198,22,147);
+    background: linear-gradient(90deg, #BA68C8 37%, rgba(0,173,249,1) 77%, rgba(0,170,249,1) 100%);
+}
+.button{
+    border-radius: 20px 20px 20px 20px;
+    background-color: white;
+    color: #7756b8;
+    font-weight: bold;
+    font-family: 'Poppins';    
+    }

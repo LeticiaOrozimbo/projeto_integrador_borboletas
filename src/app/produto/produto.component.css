@@ -14,3 +14,7 @@
     font-weight: bold;
     font-family: 'Poppins';    
     }
+.button:hover{
+    background-color: #7756b8;
+    color: white;
+}
