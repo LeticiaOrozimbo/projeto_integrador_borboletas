@@ -1,7 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
-import { environment } from 'src/environments/environment.prod';
-import { Categoria } from '../model/Categoria';
 import { Produto } from '../model/Produto';
 import { ProdutoService } from '../service/produto.service';
 
@@ -12,14 +9,20 @@ import { ProdutoService } from '../service/produto.service';
 })
 export class InicioComponent implements OnInit {
 
-  produto: Produto = new Produto()
+  listaProduto: Produto[]
+  constructor(
+    private produtoService: ProdutoService,
+  ) { }
 
-  constructor(private router: Router,
-    private route: ActivatedRoute,
-    private produtoService: ProdutoService) 
-    { }
+  ngOnInit(): void {
+    this.buscarTodosProdutos();
+  }
 
-  ngOnInit(){
+  buscarTodosProdutos() {
+    this.produtoService.buscarTodosProdutos().subscribe((resp: Produto[]) => {
+      this.listaProduto = resp
+      console.log("lista produto"+this.listaProduto)
+    })
   }
 
 }

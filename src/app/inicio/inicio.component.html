@@ -151,26 +151,41 @@
 <!-- Cards Produtos -->
 <div class="container">
 
-    <div class="row d-flex justify-content-center mb-5">
+    <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
 
-        <div class="col-md-3">
-
-            <div class="card" width="100px" heigth="100px" *ngFor="let item of listaProduto">
-                <img src="https://images.tcdn.com.br/img/img_prod/497460/camiseta_contraire_893_1_20200901155802.jpg"
-                    class="card-img-top" alt="..." />
-                <div class="card-body">
-                    <h5 class="card-title">{{item.nome}}</h5>
-                    <p class="card-text">
-                        R$ 250,00
-                    </p>
-                    <a href="#!" class="btn btn-primary">Comprar</a>
-                </div>
-            </div>
+        <!--Controls-->
+        <div class="controls-top">
+          <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+          <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
         </div>
-      
-    </div>
-
-   
+        <!--/.Controls-->
+    
+        <!--Indicators-->
+        <ol class="carousel-indicators">
+          <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+          <li data-target="#multi-item-example" data-slide-to="1"></li>
+          <li data-target="#multi-item-example" data-slide-to="2"></li>
+        </ol>
+        <!--/.Indicators-->
+    
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+    
+          <!--First slide-->
+          <div class="carousel-item active">
+    
+            <div class="row">
+              <div class="col-md-12 card-group nowrap">
+                <div class="card mb-2 mr-4" *ngFor="let item of listaProduto; let i=index">
+                  <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
+                       alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">{{item.nome}}</h4>
+                    <p class="card-text">{{item.preco}}</p>
+                    <a class="btn btn-primary">Comprar</a>
+                  </div>
+                </div>
+              </div>
 
 </div>
 <!-- /Cards Produtos -->

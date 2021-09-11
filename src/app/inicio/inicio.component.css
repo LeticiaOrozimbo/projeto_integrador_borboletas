@@ -99,3 +99,8 @@ header {
 .card-img-borboletas {
     border: solid #333;
 }
+
+.nowrap{
+    white-space: nowrap;
+}
+
