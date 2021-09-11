@@ -3,7 +3,7 @@ export class UsuarioDTO{
     public nome: string
     public senha: string
     public token: string
-    public usuario: string
+    public email: string
     public tipo: string
     public foto: string
 }
