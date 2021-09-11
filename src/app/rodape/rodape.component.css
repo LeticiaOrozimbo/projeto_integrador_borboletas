@@ -7,16 +7,16 @@ ul.social-network li{
     margin: 0;
     padding: 5px;
 }
-
 .font{
     font-family: 'Comfortaa', cursive;
 }
-
 .barra{
-    background-color: #8f8f8f;
+    background: rgb(198,22,147);
+    background: linear-gradient(90deg, rgba(198,22,147,1) 37%, rgba(0,173,249,1) 77%, rgba(0,170,249,1) 100%);
+    margin-top: 100px;
 }
-
 .fa{
-    font-size: 35pt;
+    font-size: 20pt;
     padding: 10px;
 }
+

@@ -1,3 +1,7 @@
+<!-- Navbar -->
+<app-menu></app-menu>
+<!-- Navbar -->
+
 <!-- CARROSEL -->
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
@@ -140,349 +144,387 @@
 <!-- Jumbotron -->
 <div class="jumbotron bg-white d-flex justify-content-center p-5">
     <div>
-        <h1 class="display-4">Conheça nossos produtos</h1>
+        <h1 class="display-4 focus-in-contract-bck">Conheça os produtos</h1>
     </div>
 </div>
 <!-- /Jumbotron -->
 <!-- Cards Produtos -->
 <div class="container">
+<h5 class="ml-5"> <img src="https://i.imgur.com/bW3BXew.png" height="50px" width="50px"> Roupas </h5>
+<hr class="mb-4">
+    <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
 
-    <div class="row d-flex justify-content-center mb-5">
-
-        <div class="col-md-3">
-
-            <div class="card" width="100px" heigth="100px">
-                <img src="https://images.tcdn.com.br/img/img_prod/497460/camiseta_contraire_893_1_20200901155802.jpg"
-                    class="card-img-top" alt="..." />
-                <div class="card-body">
-                    <h5 class="card-title">Camiseta</h5>
-                    <p class="card-text">
-                        R$ 250,00
-                    </p>
-                    <a href="#!" class="btn btn-primary">Comprar</a>
+        <!--Controls-->
+        <!-- <div class="controls-top d-flex justify-content-center">
+          <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+          <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+        </div> -->
+        <!--/.Controls-->
+    
+        <!--Indicators-->
+        <!-- <ol class="carousel-indicators">
+          <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+          <li data-target="#multi-item-example" data-slide-to="1"></li>
+          <li data-target="#multi-item-example" data-slide-to="2"></li>
+        </ol> -->
+        <!--/.Indicators-->
+    
+        <!--Slides-->
+        <!-- <div class="carousel-inner" role="listbox"> -->
+    
+          <!--First slide-->
+          <div class="carousel-item active">
+    
+            <div class="row">
+              <div class="col-md-12 card-group nowrap">
+                <div class="card mb-2 mr-4" *ngFor="let item of listaProduto">
+                    <!-- <div ng-if="item.categoria == 'roupas'"> -->
+                  <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
+                       alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">{{item.nome}}</h4>
+                    <p class="card-text">R$: {{item.preco}}</p>
+                    <a class="btn btn-color">Comprar</a>
+                  </div>
                 </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card" width="100px" heigth="100px">
-                <img src="https://images.tcdn.com.br/img/img_prod/497460/camiseta_contraire_893_1_20200901155802.jpg"
-                    class="card-img-top" alt="..." />
-                <div class="card-body">
-                    <h5 class="card-title">Camiseta</h5>
-                    <p class="card-text">
-                        R$ 250,00
-                    </p>
-                    <a href="#!" class="btn btn-primary">Comprar</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-3">
-            <div class="card" width="100px" heigth="100px">
-                <img src="https://images.tcdn.com.br/img/img_prod/497460/camiseta_contraire_893_1_20200901155802.jpg"
-                    class="card-img-top" alt="..." />
-                <div class="card-body">
-                    <h5 class="card-title">Camiseta</h5>
-                    <p class="card-text">
-                        R$ 250,00
-                    </p>
-                    <a href="#!" class="btn btn-primary">Comprar</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card" width="100px" heigth="100px">
-                <img src="https://images.tcdn.com.br/img/img_prod/497460/camiseta_contraire_893_1_20200901155802.jpg"
-                    class="card-img-top" alt="..." />
-                <div class="card-body">
-                    <h5 class="card-title">Camiseta</h5>
-                    <p class="card-text">
-                        R$ 250,00
-                    </p>
-                    <a href="#!" class="btn btn-primary">Comprar</a>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="row d-flex justify-content-center">
-
-        <div class="col-md-3">
-            <div class="card" width="100px" heigth="100px">
-                <img src="https://images.tcdn.com.br/img/img_prod/497460/camiseta_contraire_893_1_20200901155802.jpg"
-                    class="card-img-top" alt="..." />
-                <div class="card-body">
-                    <h5 class="card-title">Camiseta</h5>
-                    <p class="card-text">
-                        R$ 250,00
-                    </p>
-                    <a href="#!" class="btn btn-primary">Comprar</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-3">
-            <div class="card" width="100px" heigth="100px">
-                <img src="https://images.tcdn.com.br/img/img_prod/497460/camiseta_contraire_893_1_20200901155802.jpg"
-                    class="card-img-top" alt="..." />
-                <div class="card-body">
-                    <h5 class="card-title">Camiseta</h5>
-                    <p class="card-text">
-                        R$ 250,00
-                    </p>
-                    <a href="#!" class="btn btn-primary">Comprar</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-3">
-            <div class="card" width="100px" heigth="100px">
-                <img src="https://images.tcdn.com.br/img/img_prod/497460/camiseta_contraire_893_1_20200901155802.jpg"
-                    class="card-img-top" alt="..." />
-                <div class="card-body">
-                    <h5 class="card-title">Camiseta</h5>
-                    <p class="card-text">
-                        R$ 250,00
-                    </p>
-                    <a href="#!" class="btn btn-primary">Comprar</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-3">
-            <div class="card" width="100px" heigth="100px">
-                <img src="https://images.tcdn.com.br/img/img_prod/497460/camiseta_contraire_893_1_20200901155802.jpg"
-                    class="card-img-top" alt="..." />
-                <div class="card-body">
-                    <h5 class="card-title">Camiseta</h5>
-                    <p class="card-text">
-                        R$ 250,00
-                    </p>
-                    <a href="#!" class="btn btn-primary">Comprar</a>
-                </div>
-            </div>
-        </div>
-
-    </div>
+                <!-- </div> -->
+              </div>
 
 </div>
+
+<hr class="mt-4">
+
+
+<div class="container mt-5">
+    <h5 class="ml-5"> <img src="https://i.imgur.com/bW3BXew.png" height="50px" width="50px"> Eletros </h5>
+    <hr class="mb-4">
+        <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+    
+            <!--Controls-->
+            <!-- <div class="controls-top  d-flex justify-content-center">
+              <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+              <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+            </div> -->
+            <!--/.Controls-->
+        
+            <!--Indicators-->
+            <ol class="carousel-indicators">
+              <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+              <li data-target="#multi-item-example" data-slide-to="1"></li>
+              <li data-target="#multi-item-example" data-slide-to="2"></li>
+            </ol>
+            <!--/.Indicators-->
+        
+            <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+        
+              <!--First slide-->
+              <div class="carousel-item active">
+        
+                <div class="row">
+                  <div class="col-md-12 card-group nowrap">
+                    <div class="card mb-2 mr-4" *ngFor="let item of listaProduto; let i=index">
+                      <img class="card-img-top" src="https://brastemp.vtexassets.com/arquivos/ids/213732/Geladeira-BRE80AK-Frontal.jpg?v=637298140570900000"
+                           alt="Card image cap">
+                      <div class="card-body">
+                        <h4 class="card-title">{{item.nome}}</h4>
+                        <p class="card-text">R$: {{item.preco}}</p>
+                        <a class="btn btn-color">Comprar</a>
+                      </div>
+                    </div>
+                  </div>
+    
+    </div>
+    <hr class="mt-4">
+ 
 <!-- /Cards Produtos -->
 
 <!-- Sobre nos -->
 
 <!-- Jumbotron -->
 <div class="jumbotron bg-white d-flex justify-content-center p-5">
+
     <div>
-        <h1 class="display-4">Sobre nós</h1>
-        <p class="lead">Projeto Borboletas</p>
+        <h1 class="display-4 text-center">Sobre nós</h1>
+        <p class="lead m-auto text-center">Projeto Borboletas</p>
     </div>
+
 </div>
 <!-- /Jumbotron -->
 
 <div class="container">
 
     <div class="row">
+
+        <!-- COMO SURGIU O BORBOLETAS -->
         <div class="col-md-6 img-sobrenos">
-            <h3>Sobre o projeto</h3>
+            <h3 class="text-center">Como o Borbolotas surgiu</h3>
 
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia architecto ex sit totam rem? Error
-                saepe iusto perferendis voluptate. Eius, accusamus officia voluptas maxime vero rerum ducimus molestiae
-                repudiandae fugiat.</p>
-            <p>Molestias, fugiat ipsum consectetur facilis odit voluptatum voluptates culpa laborum fugit saepe eos
-                quaerat explicabo dolorum non sint error tempora ratione, voluptas aliquam dolorem. Dolores, a minima?
-                Maxime, quod dolore?</p>
-            <p>Accusantium necessitatibus error assumenda, laudantium culpa adipisci inventore voluptatum minus sequi
-                nisi iure omnis commodi ad officiis obcaecati voluptate, officia reprehenderit veritatis ut. Quia quae
-                perspiciatis molestiae, sequi voluptates
-                neque?
-            </p>
+            <div class="mt-4">
+                <p>
+                    Borboletas surgiu com o intuito de contribuir com a autonomia financeira de pessoas transgêneras,
+                    baseando-se na ODS10 - Redução da Desigualdade, o e-commerce visa ajudar através da divulgação de
+                    trabalhos e produtos.
+                </p>
 
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam excepturi error tempore
+                    necessitatibus aliquam! Harum, aut! Inventore, ipsam provident, tempora accusantium dolor debitis
+                    voluptatem dolores magnam saepe labore delectus atque!
+                </p>
+            </div>
         </div>
+
         <div class="col-md-6">
             <div class="d-flex justify-content-center">
-                <img src="https://i.imgur.com/oAlyZKu.png" width="500px" height="500Lucapx" alt="">
+                <img src="https://i.imgur.com/ipLlvEL.png" height="300px" width="300px" class="img-fluid" alt="">
             </div>
         </div>
-    </div>
-
-    <div class="row mb-8">
 
     </div>
 
-</div>
-<!-- /Sobre nos -->
-
-<div class="container my-5">
-
-
-    <!--Section: Content-->
-    <section class="team-section text-center dark-grey-text">
-
-        <!-- Section heading -->
-        <h3 class="font-weight-bold pb-2 mb-4">Time de desenvolvimento</h3>
-        <!-- Section description -->
-        <p class="text-muted w-responsive mx-auto mb-5">Usando a tecnologia para promover a igualdade</p>
-
-        <!-- Grid row -->
-        <div class="row">
-
-            <!-- Grid column -->
-            <div class="col-lg-2 col-md-5 mb-4">
-
-                <div class="avatar mx-auto">
-                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg"
-                        class="rounded-circle z-depth-1" alt="Sample avatar">
-                </div>
-
-                <h5 class="font-weight-bold mt-4 mb-3">Barbara</h5>
-                <p class="text-uppercase blue-text"><strong>Graphic designer</strong></p>
-                <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
-                    adipisci sed quia non numquam modi tempora eius.</p>
-                <ul class="list-unstyled mb-0">
-                    <!-- Facebook -->
-                    <a class="p-2 fa-lg fb-ic">
-                        <i class="fab fa-facebook-f blue-text"> </i>
-                    </a>
-                    <!-- Twitter -->
-                    <a class="p-2 fa-lg tw-ic">
-                        <i class="fab fa-twitter blue-text"> </i>
-                    </a>
-                    <!-- Instagram -->
-                    <a class="p-2 fa-lg ins-ic">
-                        <i class="fab fa-instagram blue-text"> </i>
-                    </a>
-
-                </ul>
+    <div class="row">
+         <!-- NOSSA MISSÃO -->
+         <div class="col-md-6 img-sobrenos">
+            <div class="d-flex justify-content-center">
+                <img src="https://i.imgur.com/Sl0PZpc.gif" height="300px" width="300px" class="img-fluid" alt="">
             </div>
-            <!-- Grid column -->
+        </div>
 
-            <!-- Grid column -->
-            <div class="col-lg-2 col-md-5 mb-4">
-                <div class="avatar mx-auto">
-                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg" class="rounded-circle z-depth-1"
-                        alt="Sample avatar">
-                </div>
-                <h5 class="font-weight-bold mt-4 mb-3">Jaqueline</h5>
-                <p class="text-uppercase blue-text"><strong>Web developer</strong></p>
-                <p class="grey-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem ipsa accusantium
-                    doloremque rem laudantium totam aperiam.</p>
-                <ul class="list-unstyled mb-0">
-                    <!-- Facebook -->
-                    <a class="p-2 fa-lg fb-ic">
-                        <i class="fab fa-facebook-f blue-text"> </i>
-                    </a>
-                    <!-- Instagram -->
-                    <a class="p-2 fa-lg ins-ic">
-                        <i class="fab fa-instagram blue-text"> </i>
-                    </a>
-                </ul>
-            </div>
-            <!-- Grid column -->
+        <div class="col-md-6">
 
-            <!-- Grid column -->
-            <div class="col-lg-2 col-md-5 mb-4">
-                <div class="avatar mx-auto">
-                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg"
-                        class="rounded-circle z-depth-1" alt="Sample avatar">
-                </div>
-                <h5 class="font-weight-bold mt-4 mb-3">João Vitor</h5>
-                <p class="text-uppercase blue-text"><strong>Photographer</strong></p>
-                <p class="grey-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                    mollit anim est fugiat nulla id eu laborum.</p>
-                <ul class="list-unstyled mb-0">
-                    <!-- Facebook -->
-                    <a class="p-2 fa-lg fb-ic">
-                        <i class="fab fa-facebook-f blue-text"> </i>
-                    </a>
-                    <!-- Instagram -->
-                    <a class="p-2 fa-lg ins-ic">
-                        <i class="fab fa-instagram blue-text"> </i>
-                    </a>
-                    <!-- Dribbble -->
-                    <a class="p-2 fa-lg ins-ic">
-                        <i class="fab fa-dribbble blue-text"> </i>
-                    </a>
-                </ul>
-            </div>
-            <!-- Grid column -->
+            <h3 class="text-center">Nossa missão</h3>
 
-            <!-- Grid column -->
-            <div class="col-lg-2 col-md-5 mb-4">
-                <div class="avatar mx-auto">
-                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg"
-                        class="rounded-circle z-depth-1" alt="Sample avatar">
-                </div>
-                <h5 class="font-weight-bold mt-4 mb-3">Letícia Orozimbo</h5>
-                <p class="text-uppercase blue-text"><strong>Backend developer</strong></p>
-                <p class="grey-text">Perspiciatis repellendus ad odit consequuntur, eveniet earum nisi qui consectetur
-                    totam officia voluptates perferendis voluptatibus aut.</p>
-                <ul class="list-unstyled mb-0">
-                    <!-- Facebook -->
-                    <a class="p-2 fa-lg fb-ic">
-                        <i class="fab fa-facebook-f blue-text"> </i>
-                    </a>
-                    <!-- Github -->
-                    <a class="p-2 fa-lg ins-ic">
-                        <i class="fab fa-github blue-text"> </i>
-                    </a>
-                </ul>
-            </div>
-            <!-- Grid column -->
+            <div class="mt-4">
+                <p>
+                    Borboletas surgiu com o intuito de contribuir com a autonomia financeira de pessoas transgêneras,
+                    baseando-se na ODS10 - Redução da Desigualdade, o e-commerce visa ajudar através da divulgação de
+                    trabalhos e produtos.
+                </p>
 
-            <!-- Grid column -->
-            <div class="col-lg-2 col-md-5 mb-4">
-                <div class="avatar mx-auto">
-                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg"
-                        class="rounded-circle z-depth-1" alt="Sample avatar">
-                </div>
-                <h5 class="font-weight-bold mt-4 mb-3">Lucas Lauro</h5>
-                <p class="text-uppercase blue-text"><strong>Backend developer</strong></p>
-                <p class="grey-text">Perspiciatis repellendus ad odit consequuntur, eveniet earum nisi qui consectetur
-                    totam officia voluptates perferendis voluptatibus aut.</p>
-                <ul class="list-unstyled mb-0">
-                    <!-- Facebook -->
-                    <a class="p-2 fa-lg fb-ic">
-                        <i class="fab fa-facebook-f blue-text"> </i>
-                    </a>
-                    <!-- Github -->
-                    <a class="p-2 fa-lg ins-ic">
-                        <i class="fab fa-github blue-text"> </i>
-                    </a>
-                </ul>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam excepturi error tempore
+                    necessitatibus aliquam! Harum, aut! Inventore, ipsam provident, tempora accusantium dolor debitis
+                    voluptatem dolores magnam saepe labore delectus atque!
+                </p>
             </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-lg-2 col-md-5 mb-4">
-                <div class="avatar mx-auto">
-                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg"
-                        class="rounded-circle z-depth-1" alt="Sample avatar">
-                </div>
-                <h5 class="font-weight-bold mt-4 mb-3">Yoha</h5>
-                <p class="text-uppercase blue-text"><strong>Backend developer</strong></p>
-                <p class="grey-text">Perspiciatis repellendus ad odit consequuntur, eveniet earum nisi qui consectetur
-                    totam officia voluptates perferendis voluptatibus aut.</p>
-                <ul class="list-unstyled mb-0">
-                    <!-- Facebook -->
-                    <a class="p-2 fa-lg fb-ic">
-                        <i class="fab fa-facebook-f blue-text"> </i>
-                    </a>
-                    <!-- Github -->
-                    <a class="p-2 fa-lg ins-ic">
-                        <i class="fab fa-github blue-text"> </i>
-                    </a>
-                </ul>
-            </div>
-            <!-- Grid column -->
 
         </div>
-        <!-- Grid row -->
-
-    </section>
-    <!--Section: Content-->
-
+    </div>
 
 </div>
 
-<!--/ Sobre o grupo -->
+
+
+<!-- Jumbotron -->
+<div class="jumbotron bg-white d-flex justify-content-center p-5">
+
+    <div>
+        <h1 class="display-4 text-center">Time de desenvolvimento</h1>
+        <p class="lead m-auto text-center">Usando a tecnologia para promover a igualdade</p>
+    </div>
+
+</div>
+<!-- /Jumbotron -->
+
+
+
+<!-- SOBRE O TIME DE DESENVOLVIMENTO -->
+<div class="container">
+
+    <!-- <div class="row">
+        <div class="col-md-12 d-flex justify-content-center">
+            <div>
+                <h3 class="font-weight-bold pb-2 mb-4">Time de desenvolvimento</h3>
+                <p class="text-muted">Usando a tecnologia para promover a igualdade</p>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="row">
+        <!-- CARD 01 -->
+        <div class="col-md-2 shadow-drop-br p-3 ">
+
+            <div class="avatar mx-auto ">
+                <img src="https://i.imgur.com/7mty7ml.jpg" class="img-fluid rounded-circle z-depth-1"
+                    alt="Sample avatar">
+            </div>
+
+            <h5 class="font-weight-bold mt-4 mb-3 text-center">Barbara</h5>
+
+            <ul class="list-unstyled mb-0 d-flex justify-content-center">
+
+                <li>
+                    <!-- Github -->
+                    <a class="p-2 fa-lg ins-ic">
+                        <i class="fab fa-github blue-text"> </i>
+                    </a>
+                </li>
+                <li>
+                    <!-- LinkdIn -->
+                    <a class="p-2 fa-lg ins-ic">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+        <!-- CARD 01 -->
+
+        <!-- CARD 02 -->
+        <div class="col-md-2 shadow-drop-br p-3 ">
+
+            <div class="avatar mx-auto ">
+                <img src="https://avatars.githubusercontent.com/u/86385275?v=4"
+                    class="img-fluid rounded-circle z-depth-1" alt="Sample avatar">
+            </div>
+
+            <h5 class="font-weight-bold mt-4 mb-3 text-center">Barbara</h5>
+
+            <ul class="list-unstyled mb-0 d-flex justify-content-center">
+
+                <li>
+                    <!-- Github -->
+                    <a class="p-2 fa-lg ins-ic">
+                        <i class="fab fa-github blue-text"> </i>
+                    </a>
+                </li>
+                <li>
+                    <!-- LinkdIn -->
+                    <a class="p-2 fa-lg ins-ic">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+        <!-- CARD 02 -->
+
+        <!-- CARD 01 -->
+        <div class="col-md-2 shadow-drop-br p-3 ">
+
+            <div class="avatar mx-auto ">
+                <img src="https://i.imgur.com/QdFwWqH.png" class="img-fluid rounded-circle z-depth-1"
+                    alt="Sample avatar">
+            </div>
+
+            <h5 class="font-weight-bold mt-4 mb-3 text-center">Barbara</h5>
+
+            <ul class="list-unstyled mb-0 d-flex justify-content-center">
+
+                <li>
+                    <!-- Github -->
+                    <a class="p-2 fa-lg ins-ic">
+                        <i class="fab fa-github blue-text"> </i>
+                    </a>
+                </li>
+                <li>
+                    <!-- LinkdIn -->
+                    <a class="p-2 fa-lg ins-ic">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+        <!-- CARD 01 -->
+        <!-- CARD 01 -->
+        <div class="col-md-2 shadow-drop-br p-3 ">
+
+            <div class="avatar mx-auto ">
+                <img src="https://i.imgur.com/U04i6fL.jpg?1"
+                    class="img-fluid rounded-circle z-depth-1" alt="Sample avatar">
+            </div>
+
+            <h5 class="font-weight-bold mt-4 mb-3 text-center">João Vitor</h5>
+
+            <ul class="list-unstyled mb-0 d-flex justify-content-center">
+
+                <li>
+                    <!-- Github -->
+                    <a class="p-2 fa-lg ins-ic">
+                        <i class="fab fa-github blue-text"> </i>
+                    </a>
+                </li>
+                <li>
+                    <!-- LinkdIn -->
+                    <a class="p-2 fa-lg ins-ic">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+        <!-- CARD 01 -->
+
+        <!-- CARD 01 -->
+        <div class="col-md-2 shadow-drop-br p-3 ">
+
+            <div class="avatar mx-auto ">
+                <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg"
+                    class="img-fluid rounded-circle z-depth-1" alt="Sample avatar">
+            </div>
+
+            <h5 class="font-weight-bold mt-4 mb-3 text-center">Barbara</h5>
+
+            <ul class="list-unstyled mb-0 d-flex justify-content-center">
+
+                <li>
+                    <!-- Github -->
+                    <a class="p-2 fa-lg ins-ic">
+                        <i class="fab fa-github blue-text"> </i>
+                    </a>
+                </li>
+                <li>
+                    <!-- LinkdIn -->
+                    <a class="p-2 fa-lg ins-ic">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+        <!-- CARD 01 -->
+
+        <!-- CARD 02 -->
+        <div class="col-md-2 swing p-3 ">
+
+            <div class="avatar mx-auto ">
+                <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg"
+                    class="img-fluid rounded-circle z-depth-1" alt="Sample avatar">
+            </div>
+
+            <h5 class="font-weight-bold mt-4 mb-3 text-center">Barbara</h5>
+
+            <ul class="list-unstyled mb-0 d-flex justify-content-center">
+
+                <li>
+                    <!-- Github -->
+                    <a class="p-2 fa-lg ins-ic">
+                        <i class="fab fa-github blue-text"> </i>
+                    </a>
+                </li>
+                <li>
+                    <!-- LinkdIn -->
+                    <a class="p-2 fa-lg ins-ic">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+        <!-- CARD 01 -->
+
+    </div>
+</div>
+<!-- SOBRE O TIME DE DESENVOLVIMENTO -->
+
+
+
+<app-rodape></app-rodape>
