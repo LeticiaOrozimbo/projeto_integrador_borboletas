@@ -1,9 +1,11 @@
-<div class="container-fluid">
+<!-- <div class="container-fluid">
 
     <div class="row bg-secondary">
 
-        <div class="col-md-12 text-white">
-            <a routerLink='/inicio' class="text-white text-left"><i class="fa fa-angle-double-left" aria-hidden="true"></i> início</a>
+         <div class="col-md-12 text-white">
+
+         <a routerLink='/inicio' class="text-white text-left"><i class="fa fa-angle-double-left"
+                    aria-hidden="true"></i> início</a>
 
             <h1 class="fs-54 text-center">Produtos</h1>
             <h5 class="fs-18 text-center">Cadastrar produtos</h5>
@@ -11,17 +13,22 @@
             <div class="row d-flex justify-content-center mt-4 mb-5">
 
                 <div class="col-md-3">
-                    
+
                     <div class="form-group">
-                        <input [(ngModel)]='produto.nome' type="text" class="form-control mb-1" id="nome" placeholder="Digite o nome">
-                        <!-- <input [(ngModel)]='produto.descricao' type="text" class="form-control mb-1" id="descricao"placeholder="Digite a descrição do produto"> -->
-                        <input [(ngModel)]='produto.preco' type="text" class="form-control mb-1" id="preco" placeholder="Digite o preço">
-                        <input [(ngModel)]='produto.quantidade' type="text" class="form-control mb-1" id="quantidade" placeholder="Digite a quantidade">
-                        <select name="categoria" id="categoria" class="form-control" [(ngModel)]='idCategoria' (change)='findByIdCategoria()'>
+                        <input [(ngModel)]='produto.nome' type="text" class="form-control mb-1" id="nome"
+                            placeholder="Digite o nome">
+                        
+
+                        <input [(ngModel)]='produto.preco' type="text" class="form-control mb-1" id="preco"
+                            placeholder="Digite o preço">
+                        <input [(ngModel)]='produto.quantidade' type="text" class="form-control mb-1" id="quantidade"
+                            placeholder="Digite a quantidade">
+                        <select name="categoria" id="categoria" class="form-control" [(ngModel)]='idCategoria'
+                            (change)='findByIdCategoria()'>
                             <option *ngFor='let item of listaCategoria' value="{{item.id}}">
-                              {{item.descricao}}
+                                {{item.descricao}}
                             </option>
-                          </select>
+                        </select>
                     </div>
 
                     <div class="d-flex justify-content-center">
@@ -31,10 +38,38 @@
                 </div>
             </div>
 
-        </div>
+        </div> 
     </div>
 
-</div>
+</div> -->
+<div class="container-fluid barra">
+    <div class="row fundo d-flex align-items-center">
+        <div class="col-md-6">
+  
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6 text-white">
+                    <h1 class="fs-54">Produtos</h1>
+                    <h5 class="fs-18">Cadastre e edite seus produtos e serviços</h5>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center mt-3 mb-5">
+                <div class="col-md-6">
+                    <button class="btn button form mr-2 p-2 txt" data-toggle="modal"
+                        data-target="#novaPostagem">Cadastrar um Produto</button>
+                    <a class="btn button form mt-2 p-2" href="#postagens">Ver os Produtos</a>
+                </div>
+            </div>
+        </div>
+  
+        <!------Imagem ao Lado----->
+        <div class="col-md-6 d-flex justify-content-center">
+            <img src="https://i.imgur.com/LXuv4Qk.png" alt="" width="400px" height="400px">
+        </div>
+  
+    </div>
+  </div>
+  
+
 
 <div class="container">
 
@@ -61,21 +96,63 @@
 
                 <tbody>
                     <tr *ngFor='let item of listaProduto'>
-                        
-              <th>{{item.id}}</th>
-              <td>{{item.nome}}</td>
-              <td>{{item.preco}}</td>
-              <td>{{item.quantidade}}</td>
 
-              <td class="d-flex justify-content-end">
-                <button class="btn btn-info mr-3" [routerLink]="['/categoria-edit', item.id]" >Editar</button>
-                <button class="btn btn-danger">Apagar</button>
-              </td>
-            </tr>
+                        <th>{{item.id}}</th>
+                        <td>{{item.nome}}</td>
+                        <td>{{item.preco}}</td>
+                        <td>{{item.quantidade}}</td>
+
+                        <td class="d-flex justify-content-end">
+                            <button class="btn btn-info mr-3" [routerLink]="['/produto-edit', item.id]">Editar</button>
+                            <button class="btn btn-danger" [routerLink]="['/produto-delete', item.id]">Apagar</button>
+                        </td>
+                    </tr>
+
                 </tbody>
             </table>
 
         </div>
     </div>
 
+</div>
+
+
+
+
+<div class="modal fade" id="novaPostagem" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="TituloModalCentralizado">Nova Postagem</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="titulo">Titulo</label>
+                    <input type="text" class="form-control borda" id="titulo" placeholder="Digite o título">
+                </div>
+
+                <div class="form-group">
+                    <label for="titulo">Texto</label>
+                    <textarea class="form-control borda" name="texto" id="texto" rows="3"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="titulo">Escolha um tema ou <a data-dismiss="modal" routerLink='/tema'>cadastra um
+                            novo</a>: </label>
+                    <select name="tema" id="tema" class="form-control borda">
+                        <option value="">Temas</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary">Publicar</button>
+            </div>
+        </div>
+    </div>
 </div>

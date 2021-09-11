@@ -23,6 +23,8 @@ export class ProdutoComponent implements OnInit {
   // descricaoProduto: string
   precoProduto: number
   quantidadeProduto: number
+  fotoProduto: string
+  descricaoProduto: string
 
   idCategoria: number
   

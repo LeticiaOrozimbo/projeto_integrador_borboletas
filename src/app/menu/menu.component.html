@@ -3,11 +3,12 @@
 
   <!-- Navbar -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar bg-light">
+
     <div class="container-fluid">
 
-      <!-- Brand -->
-      <a class="navbar-brand waves-effect" href="https://mdbootstrap.com/docs/jquery/" target="_blank">
-        <img src="https://mdbootstrap.com/wp-content/uploads/2018/06/logo-mdb-jquery-small.png" alt="Logo">
+      <!-- LOGO -->
+      <a class="navbar-brand waves-effect" href="#" target="_blank">
+        <img src="https://i.imgur.com/bW3BXew.png" class="img-fluid img-nav" alt="" loading="lazy" />
       </a>
 
       <!-- Collapse -->
@@ -20,18 +21,13 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
         <!-- Left -->
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link waves-effect" href="https://mdbootstrap.com/docs/jquery/" target="_blank">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link waves-effect" href="https://mdbootstrap.com/docs/angular/" target="_blank">Sobre nós</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link waves-effect" href="https://mdbootstrap.com/docs/react/" target="_blank">Contato</a>
-          </li>
-        </ul>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
+          <li class="nav-item">
+            <a class="nav-link fonte2 text-black" href="#">Pagina Inicial</a>
+          </li>
+
+        </ul>
 
         <!-- Right -->
         <div class="d-flex align-items-center">
@@ -40,26 +36,8 @@
             <i class="fas fa-shopping-cart"></i>
           </a>
 
-          <!-- Notifications -->
-          <a class="text-reset me-3 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button"
-            data-mdb-toggle="dropdown" aria-expanded="false">
-            <i class="fas fa-bell"></i>
-            <span class="badge rounded-pill badge-notification bg-danger">1</span>
-          </a>
-          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
-            <li>
-              <a class="dropdown-item" href="#">Some news</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">Another news</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </li>
-          </ul>
-
+          <!-- AVATAR USUARIO LOGADO  -->
           <ul class="navbar-nav">
-            <!-- Avatar -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdownMenuLink"
                 role="button" data-mdb-toggle="dropdown" aria-expanded="false">
@@ -79,21 +57,29 @@
               </ul>
             </li>
           </ul>
+          <!-- AVATAR USUARIO LOGADO  -->
         </div>
 
 
+        <!-- CONECTAR-SE -->
         <ul class="navbar-nav nav-flex-icons">
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+            <a class="nav-link dropdown-toggle fonte2 text-black" href="#" id="navbarDropdownMenuLink" role="button"
               data-mdb-toggle="dropdown" aria-expanded="false">
               Conectar-se
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <li>
-                <a class="dropdown-item" routerLink='/entrar'>Logar</a>
+                <a class="dropdown-item" routerLink='/entrar'>Entrar</a>
               </li>
               <li>
-                <a class="dropdown-item" href="#">Cadastrar-se</a>
+                <a class="dropdown-item" routerLink='/cadastrar'>Cadastrar-se</a>
+              </li>
+              <li>
+                <a class="dropdown-item" routerLink='/produto'>Produto</a>
+              </li>
+              <li>
+                <a class="dropdown-item" routerLink='/categorias'>Categoria</a>
               </li>
               <li>
                 <a class="dropdown-item" href="#">Meu negócio</a>
@@ -110,3 +96,104 @@
 
 </header>
 <!-- Navigation -->
+
+
+
+
+
+
+
+
+
+
+<!-- TESTEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE -->
+
+
+
+
+<!-- 
+<div class="container-fluid">
+  <div class="row fundo d-flex align-items-center">
+      <div class="col-md-6">
+
+          <div class="row d-flex justify-content-center">
+              <div class="col-md-6 text-white">
+                  <h1 class="fs-54">Seja Bem Vindes !!</h1>
+                  <h5 class="fs-18">Expresse aqui os seus pensamentos e opinião :)</h5>
+              </div>
+          </div>
+          <div class="row d-flex justify-content-center mt-3 mb-5">
+              <div class="col-md-6">
+                  <button class="btn btn-primary round form mr-2" data-toggle="modal"
+                      data-target="#novaPostagem">Novas Postagens</button>
+                  <a class="btn btn-primary round form" href="#postagens">Ver Postagens</a>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-md-6 d-flex justify-content-center">
+          <img src="https://i.imgur.com/z90Ntk9.png" alt="" width="500px" height="500px">
+      </div>
+
+  </div>
+</div>
+
+<div class="container mb-5 mt-5" id="postagens">
+  <nav>
+      <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">
+          <a class="nav-item nav-link active text-black" id="nav-todasPostagens-tab" data-toggle="tab"
+              href="#nav-todasPostagens" role="tab" aria-controls="nav-todasPostagens" aria-selected="true">Todas as
+              Postagens</a>
+
+          <a class="nav-item nav-link text-black" id="nav-minhasPostagens-tab" data-toggle="tab"
+              href="#nav-minhasPostagens" role="tab" aria-controls="nav-minhasPostagens" aria-selected="false">Minhas
+              Postagens</a>
+
+          <a class="nav-item nav-link text-black" id="nav-postagemTema-tab" data-toggle="tab" href="#nav-postagemTema"
+              role="tab" aria-controls="nav-postagemTema" aria-selected="false">Postagens por tema</a>
+      </div>
+  </nav>
+
+  <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="nav-todasPostagens" role="tabpanel"
+          aria-labelledby="nav-todasPostagens-tab">Todas as Postagens</div>
+
+      <div class="tab-pane fade" id="nav-minhasPostagens" role="tabpanel" aria-labelledby="nav-minhasPostagens-tab">
+          Minhas Postagens</div>
+
+      <div class="tab-pane fade" id="nav-postagemTema" role="tabpanel" aria-labelledby="nav-postagemTema-tab">
+          Postagens por tema</div>
+  </div>
+</div>
+
+
+
+
+<div class="modal fade" id="novaPostagem" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="TituloModalCentralizado">Nova Postagem</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+              <div class="form-group">
+                  <label for="titulo">Titulo</label>
+                  <input type="text" class="form-control borda" id="titulo" placeholder="Digite o título">
+              </div>
+
+              <div class="form-group">
+                  <label for="titulo">Texto</label>
+                  <textarea class="form-control borda" name="texto" id="texto" rows="3"></textarea>
+              </div>
+
+              <div class="form-group">
+                  <label for="titulo">Escolha um tema ou <a data-dismiss="modal" routerLink='/tema'>cadastra um
+                          novo</a>: </label>
+                  <select name="tema" id="tema" class="form-control borda">
+                      <option value="">Temas</option>
+                  </select>
+              </div> -->

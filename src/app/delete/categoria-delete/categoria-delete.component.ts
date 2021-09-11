@@ -22,29 +22,31 @@ export class CategoriaDeleteComponent implements OnInit {
     private route: ActivatedRoute
   ) { }
 
-  ngOnInit(){
-    if(environment.token == ''){
+  ngOnInit() {
+    if (environment.token == '') {
       this.router.navigate(['/entrar'])
+    }
+
+    this.idCategoria = this.route.snapshot.params['id']
+    this.findByIdCategoria(this.idCategoria)
+
   }
 
- this.idCategoria = this.route.snapshot.params['id']
-  this.findByIdCategoria(this.idCategoria)
 
-  }
-
-  
-  findByIdCategoria(id: number){
-    this.categoriaService.getByIdCategoria(id).subscribe((resp: Categoria) =>{
+  findByIdCategoria(id: number) {
+    this.categoriaService.getByIdCategoria(id).subscribe((resp: Categoria) => {
       this.categoria = resp
     })
   }
 
-  apagar(){
-    this.categoriaService.deleteCategoria(this.idCategoria).subscribe(()=>{
+  apagar() {
+
+    this.categoriaService.deleteCategoria(this.idCategoria).subscribe(() => {
       alert('Categoria deletada com sucesso!')
       this.router.navigate(['/categorias'])
     })
+    
   }
-  }
+}
 
 

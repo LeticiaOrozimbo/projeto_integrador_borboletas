@@ -1,5 +1,15 @@
-.navbar .navbar-brand img {
-    height: 20px;
+/* NAV ANTIGA */
+
+.navbar {
+    height: 58px;
+}
+.navbar-brand img {
+    height: 60px;
+    /* width: 45px; */
+}
+
+.img-nav {
+    height: 100px;
 }
 
 .navbar .navbar-brand {
@@ -39,3 +49,22 @@
         padding-left: 0 !important;
     }
 }
+
+.fonte2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* NAV V2 */
+.cor-contato {
+    background: rgb(198, 22, 147);
+    background: linear-gradient(90deg, rgba(198, 22, 147, 1) 37%, rgba(0, 173, 249, 1) 77%, rgba(0, 170, 249, 1) 100%);
+}
+
+.fonte {
+    font-family: 'Comfortaa', cursive;
+}
+
+.fs-54 {
+    font-size: 40pt;
+}
+/* NAV V2 */
