@@ -10,6 +10,7 @@ import { ProdutoService } from '../service/produto.service';
 export class InicioComponent implements OnInit {
 
   listaProduto: Produto[]
+  
   constructor(
     private produtoService: ProdutoService,
   ) { }
