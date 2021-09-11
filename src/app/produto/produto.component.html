@@ -68,7 +68,7 @@
               <td>{{item.quantidade}}</td>
 
               <td class="d-flex justify-content-end">
-                <button class="btn btn-info mr-3">Editar</button>
+                <button class="btn btn-info mr-3" [routerLink]="['/categoria-edit', item.id]" >Editar</button>
                 <button class="btn btn-danger">Apagar</button>
               </td>
             </tr>
