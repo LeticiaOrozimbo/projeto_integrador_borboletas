@@ -108,6 +108,16 @@
                 </div>
 
                 <div class="form-group">
+                    <input [(ngModel)]='produto.foto' type="text" class="form-control mb-1" id="foto"
+                            placeholder="Insira o link da foto">
+                </div>
+
+                <div class="form-group">
+                    <input [(ngModel)]='produto.descricao' type="text" class="form-control mb-1" id="descricao"
+                            placeholder="Insira uma descrição">
+                </div>
+
+                <div class="form-group">
                     <label for="titulo">Escolha uma categoria ou <a data-dismiss="modal" routerLink='/categorias'>cadastre uma
                             nova</a>: </label>
                             <select name="categoria" id="categoria" class="form-control" [(ngModel)]='idCategoria'
@@ -121,7 +131,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-primary" data-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-primary">Publicar</button>
+                <button type="button" class="btn btn-primary" (click)='criandoProduto()'>Publicar</button>
             </div>
         </div>
     </div>
