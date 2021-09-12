@@ -48,9 +48,9 @@
                 <thead>
                     <tr>
                         <th scope="col">#</th>
-                        <th scope="col">nome</th>
-                        <th scope="col">preco</th>
-                        <th scope="col">quantidade</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Preço</th>
+                        <th scope="col">Quantidade</th>
                         <th scope="col" class="text-right">Modificações</th>
 
                     </tr>
@@ -108,6 +108,16 @@
                 </div>
 
                 <div class="form-group">
+                    <input [(ngModel)]='produto.foto' type="text" class="form-control mb-1" id="foto"
+                            placeholder="Insira o link da foto">
+                </div>
+
+                <div class="form-group">
+                    <input [(ngModel)]='produto.descricao' type="text" class="form-control mb-1" id="descricao"
+                            placeholder="Insira uma descrição">
+                </div>
+
+                <div class="form-group">
                     <label for="titulo">Escolha uma categoria ou <a data-dismiss="modal" routerLink='/categorias'>cadastre uma
                             nova</a>: </label>
                             <select name="categoria" id="categoria" class="form-control" [(ngModel)]='idCategoria'
@@ -120,8 +130,13 @@
 
             </div>
             <div class="modal-footer">
+<<<<<<< HEAD
                 <button type="button" class="btn btn-primary" data-dismiss="modal">Cancelar</button>
                 <button type="button" class="btn btn-primary ">Publicar</button>
+=======
+                <button type="button" class="btn button" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn button" (click)='criandoProduto()'>Registrar</button>
+>>>>>>> b59d3937ab05591fc0e96a703924b313ae4a22a6
             </div>
         </div>
     </div>

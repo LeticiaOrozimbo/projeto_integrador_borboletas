@@ -103,6 +103,8 @@ console.log("this.idCategoria "+this.idCategoria)
     console.log("produto "+JSON.stringify(this.produto))
     this.produtoService.criandoProduto(this.produto).subscribe((resp: Produto) => {
       this.produto = resp
+      alert('produto atualizada com sucesso!')
+      this.router.navigate(['/produto'])
       this.produto = new Produto()
       this.buscarTodosProdutos()
     })
