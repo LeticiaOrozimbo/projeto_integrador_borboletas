@@ -3,8 +3,8 @@
 <!-- Navbar -->
 
 <!-- CARROSEL -->
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
+<div id="carouselExampleControls" class="carousel slide mt-4" data-ride="carousel">
+    <div class="carousel-inner carrocel-inicio">
         <div class="carousel-item active">
             <!-- Titulo Princípal = O PROJETO ! -->
             <div class="container z-depth-1">
@@ -33,11 +33,11 @@
             <!-- CAROUSEL ITEM 03 = EMPREENDA AGORA ! -->
             <div class="container z-depth-1">
                 <div class="row">
-                    <div class="col-md-5 mb-4 mb-md-0">
+                    <div class="col-md-5 mb-4 mb-md-0 mt-5">
 
                         <div class="view">
-                            <img src="https://mdbootstrap.com/img/illustrations/undraw_Group_chat_unwm.svg" height="px"
-                                class="img-fluid" alt="smaple image">
+                            <img src="https://i.imgur.com/zWFqwuT.png" height="250px" width="250px"
+                                class="img-fluid rounded mx-auto d-block" alt="smaple image">
                         </div>
 
                     </div>
@@ -83,8 +83,8 @@
                         <div class="col-md-7 mb-4">
 
                             <div class="view">
-                                <img src="https://mdbootstrap.com/img/illustrations/graphics(4).png" class="img-fluid"
-                                    alt="smaple image">
+                                <img src="https://i.imgur.com/XQffDuP.png" height="250px" width="250px"
+                                    class="img-fluid rounded mx-auto d-block" alt="smaple image">
                             </div>
 
                         </div>
@@ -99,9 +99,6 @@
                                 <p>Você, pessoa trans, ama de paixão tocar? Que tal ensinar outras pessoas? Não perca
                                     tempo e
                                     empreenda já!</p>
-
-                                <button type="button" class="btn btn-orange btn-rounded mx-0">Download</button>
-
                             </div>
                         </div>
                     </div>
@@ -126,21 +123,6 @@
 <!--/CARROSEL -->
 
 
-
-<!-- PRODUTOS -->
-<div class="container z-depth-1">
-    <div class="row">
-        <div class="col-md-12">
-
-
-
-
-
-        </div>
-    </div>
-</div>
-<!-- /PRODUTOS -->
-
 <!-- Jumbotron -->
 <div class="jumbotron bg-white d-flex justify-content-center p-5">
     <div>
@@ -150,8 +132,8 @@
 <!-- /Jumbotron -->
 <!-- Cards Produtos -->
 <div class="container">
-<h5 class="ml-5"> <img src="https://i.imgur.com/bW3BXew.png" height="50px" width="50px"> Roupas </h5>
-<hr class="mb-4">
+    <h5 class="ml-5"> <img src="https://i.imgur.com/bW3BXew.png" height="50px" width="50px"> Roupas </h5>
+    <hr class="mb-4">
     <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
 
         <!--Controls-->
@@ -160,7 +142,7 @@
           <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
         </div> -->
         <!--/.Controls-->
-    
+
         <!--Indicators-->
         <!-- <ol class="carousel-indicators">
           <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
@@ -168,363 +150,370 @@
           <li data-target="#multi-item-example" data-slide-to="2"></li>
         </ol> -->
         <!--/.Indicators-->
-    
+
         <!--Slides-->
         <!-- <div class="carousel-inner" role="listbox"> -->
-    
-          <!--First slide-->
-          <div class="carousel-item active">
-    
+
+        <!--First slide-->
+        <div class="carousel-item active">
+
             <div class="row">
-              <div class="col-md-12 card-group nowrap">
-                <div class="card mb-2 mr-4" *ngFor="let item of listaProduto">
-                    <!-- <div ng-if="item.categoria == 'roupas'"> -->
-                  <img class="card-img-top" src="{{item.foto}}"
-                       alt="Card image cap">
-                  <div class="card-body">
-                    <h4 class="card-title">{{item.nome}}</h4>
-                    <p class="card-text">R$: {{item.preco}}</p>
-                    <a class="btn btn-color">Comprar</a>
-                  </div>
+                <div class="col-md-12 card-group nowrap">
+                    <div class="card mb-2 mr-4" *ngFor="let item of listaProduto">
+                        <!-- <div ng-if="item.categoria == 'roupas'"> -->
+                        <img class="card-img-top" src="{{item.foto}}" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">{{item.nome}}</h4>
+                            <p class="card-text">R$: {{item.preco}}</p>
+                            <a class="btn btn-color">Comprar</a>
+                        </div>
+                    </div>
+                    <!-- </div> -->
                 </div>
-                <!-- </div> -->
-              </div>
 
-</div>
+            </div>
 
-<hr class="mt-4">
+            <hr class="mt-4">
 
 
-<div class="container mt-5">
-    <h5 class="ml-5"> <img src="https://i.imgur.com/bW3BXew.png" height="50px" width="50px"> Eletros </h5>
-    <hr class="mb-4">
-        <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
-    
-            <!--Controls-->
-            <!-- <div class="controls-top  d-flex justify-content-center">
+            <div class="container mt-5">
+                <h5 class="ml-5"> <img src="https://i.imgur.com/bW3BXew.png" height="50px" width="50px"> Eletros </h5>
+                <hr class="mb-4">
+                <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+                    <!--Controls-->
+                    <!-- <div class="controls-top  d-flex justify-content-center">
               <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
               <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
             </div> -->
-            <!--/.Controls-->
-        
-            <!--Indicators-->
-            <ol class="carousel-indicators">
-              <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
-              <li data-target="#multi-item-example" data-slide-to="1"></li>
-              <li data-target="#multi-item-example" data-slide-to="2"></li>
-            </ol>
-            <!--/.Indicators-->
-        
-            <!--Slides-->
-            <div class="carousel-inner" role="listbox">
-        
-              <!--First slide-->
-              <div class="carousel-item active">
-        
-                <div class="row">
-                  <div class="col-md-12 card-group nowrap">
-                    <div class="card mb-2 mr-4" *ngFor="let item of listaProduto; let i=index">
-                      <img class="card-img-top" src="https://brastemp.vtexassets.com/arquivos/ids/213732/Geladeira-BRE80AK-Frontal.jpg?v=637298140570900000"
-                           alt="Card image cap">
-                      <div class="card-body">
-                        <h4 class="card-title">{{item.nome}}</h4>
-                        <p class="card-text">R$: {{item.preco}}</p>
-                        <a class="btn btn-color">Comprar</a>
-                      </div>
-                    </div>
-                  </div>
-    
-    </div>
-    <hr class="mt-4">
- 
-<!-- /Cards Produtos -->
-
-<!-- Sobre nos -->
-
-<!-- Jumbotron -->
-<div class="jumbotron bg-white d-flex justify-content-center p-5">
-
-    <div>
-        <h1 class="display-4 text-center">Sobre nós</h1>
-        <p class="lead m-auto text-center">Projeto Borboletas</p>
-    </div>
-
-</div>
-<!-- /Jumbotron -->
-
-<div class="container">
-
-    <div class="row">
-
-        <!-- COMO SURGIU O BORBOLETAS -->
-        <div class="col-md-6 img-sobrenos">
-            <h3 class="text-center">Como o Borbolotas surgiu</h3>
-
-            <div class="mt-4">
-                <p>
-                    Borboletas surgiu com o intuito de contribuir com a autonomia financeira de pessoas transgêneras,
-                    baseando-se na ODS10 - Redução da Desigualdade, o e-commerce visa ajudar através da divulgação de
-                    trabalhos e produtos.
-                </p>
-
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam excepturi error tempore
-                    necessitatibus aliquam! Harum, aut! Inventore, ipsam provident, tempora accusantium dolor debitis
-                    voluptatem dolores magnam saepe labore delectus atque!
-                </p>
-            </div>
-        </div>
-
-        <div class="col-md-6">
-            <div class="d-flex justify-content-center">
-                <img src="https://i.imgur.com/ipLlvEL.png" height="300px" width="300px" class="img-fluid" alt="">
-            </div>
-        </div>
-
-    </div>
-
-    <div class="row">
-         <!-- NOSSA MISSÃO -->
-         <div class="col-md-6 img-sobrenos">
-            <div class="d-flex justify-content-center">
-                <img src="https://i.imgur.com/Sl0PZpc.gif" height="300px" width="300px" class="img-fluid" alt="">
-            </div>
-        </div>
-
-        <div class="col-md-6">
-
-            <h3 class="text-center">Nossa missão</h3>
-
-            <div class="mt-4">
-                <p>
-                    Borboletas surgiu com o intuito de contribuir com a autonomia financeira de pessoas transgêneras,
-                    baseando-se na ODS10 - Redução da Desigualdade, o e-commerce visa ajudar através da divulgação de
-                    trabalhos e produtos.
-                </p>
-
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam excepturi error tempore
-                    necessitatibus aliquam! Harum, aut! Inventore, ipsam provident, tempora accusantium dolor debitis
-                    voluptatem dolores magnam saepe labore delectus atque!
-                </p>
-            </div>
+                    <!--/.Controls-->
+
+                    <!--Indicators-->
+                    <ol class="carousel-indicators">
+                        <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+                        <li data-target="#multi-item-example" data-slide-to="1"></li>
+                        <li data-target="#multi-item-example" data-slide-to="2"></li>
+                    </ol>
+                    <!--/.Indicators-->
+
+                    <!--Slides-->
+                    <div class="carousel-inner" role="listbox">
+
+                        <!--First slide-->
+                        <div class="carousel-item active">
+
+                            <div class="row">
+                                <div class="col-md-12 card-group nowrap">
+                                    <div class="card mb-2 mr-4" *ngFor="let item of listaProduto; let i=index">
+                                        <img class="card-img-top"
+                                            src="https://brastemp.vtexassets.com/arquivos/ids/213732/Geladeira-BRE80AK-Frontal.jpg?v=637298140570900000"
+                                            alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">{{item.nome}}</h4>
+                                            <p class="card-text">R$: {{item.preco}}</p>
+                                            <a class="btn btn-color">Comprar</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <hr class="mt-4">
+
+                            <!-- /Cards Produtos -->
+
+                            <!-- Sobre nos -->
+
+                            <!-- Jumbotron -->
+                            <div class="jumbotron bg-white d-flex justify-content-center p-5">
+
+                                <div>
+                                    <h1 class="display-4 text-center">Sobre nós</h1>
+                                    <p class="lead m-auto text-center">Projeto Borboletas</p>
+                                </div>
 
-        </div>
-    </div>
+                            </div>
+                            <!-- /Jumbotron -->
 
-</div>
+                            <div class="container">
 
+                                <div class="row">
 
+                                    <!-- COMO SURGIU O BORBOLETAS -->
+                                    <div class="col-md-6 img-sobrenos">
+                                        <h3 class="text-center">Como o Borbolotas surgiu</h3>
 
-<!-- Jumbotron -->
-<div class="jumbotron bg-white d-flex justify-content-center p-5">
+                                        <div class="mt-4">
+                                            <p>
+                                                Borboletas surgiu com o intuito de contribuir com a autonomia financeira
+                                                de pessoas transgêneras,
+                                                baseando-se na ODS10 - Redução da Desigualdade, o e-commerce visa ajudar
+                                                através da divulgação de
+                                                trabalhos e produtos.
+                                            </p>
 
-    <div>
-        <h1 class="display-4 text-center">Time de desenvolvimento</h1>
-        <p class="lead m-auto text-center">Usando a tecnologia para promover a igualdade</p>
-    </div>
+                                            <p>
+                                                Segundo dados do Índice de Estigma em relação às pessoas vivendo com HIV/AIDS – Brasil— estudo inédito no país realizado em sete capitais brasileiras—, mais de 90% da população trans já sofreu discriminação da vida por conta da sua identidade de gênero.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="d-flex justify-content-center">
+                                            <img src="https://i.imgur.com/ipLlvEL.png" height="300px" width="300px"
+                                                class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
 
-</div>
-<!-- /Jumbotron -->
-
+                                <div class="row">
+                                    <!-- NOSSA MISSÃO -->
+                                    <div class="col-md-6 img-sobrenos">
+                                        <div class="d-flex justify-content-center">
+                                            <img src="https://i.imgur.com/Sl0PZpc.gif" height="300px" width="300px"
+                                                class="img-fluid" alt="">
+                                        </div>
+                                    </div>
 
+                                    <div class="col-md-6">
 
-<!-- SOBRE O TIME DE DESENVOLVIMENTO -->
-<div class="container">
+                                        <h3 class="text-center">Missão</h3>
 
-    <!-- <div class="row">
-        <div class="col-md-12 d-flex justify-content-center">
-            <div>
-                <h3 class="font-weight-bold pb-2 mb-4">Time de desenvolvimento</h3>
-                <p class="text-muted">Usando a tecnologia para promover a igualdade</p>
-            </div>
-        </div>
-    </div> -->
+                                        <div class="mt-4">
+                                            <p>
+                                                A nossa missão e ajudar a integrar pessoas Trans no mercado de trabalho.
+                                            </p>
+
+                                            <h3 class="text-center">Visão</h3>
+
+                                        <div class="mt-4">
+                                            <p>
+                                                Ajudar Trans e que estão está em transisão no mercado de trabalho sendo dones de 
+                                                seu próprio dinheiro.
+                                            </p>
 
-    <div class="row">
-        <!-- CARD 01 -->
-        <div class="col-md-2 shadow-drop-br p-3 ">
+                                            <h3 class="text-center">Valores</h3>
 
-            <div class="avatar mx-auto ">
-                <img src="https://i.imgur.com/7mty7ml.jpg" class="img-fluid rounded-circle z-depth-1"
-                    alt="Sample avatar">
-            </div>
+                                        <div class="mt-4">
+                                            <p>
+                                                Respeito entre as pessoas
+                                                <br>
+                                                Empatia
+                                                <br>
+                                                Solidariedade
+                                                <br>
+                                                Humildade
+                                                <br>
+                                                Responsabilidade
+                                            </p>
 
-            <h5 class="font-weight-bold mt-4 mb-3 text-center">Barbara</h5>
-
-            <ul class="list-unstyled mb-0 d-flex justify-content-center">
-
-                <li>
-                    <!-- Github -->
-                    <a class="p-2 fa-lg ins-ic">
-                        <i class="fab fa-github blue-text"> </i>
-                    </a>
-                </li>
-                <li>
-                    <!-- LinkdIn -->
-                    <a class="p-2 fa-lg ins-ic">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </li>
-
-            </ul>
-
-        </div>
-        <!-- CARD 01 -->
 
-        <!-- CARD 02 -->
-        <div class="col-md-2 shadow-drop-br p-3 ">
+                                        </div>
 
-            <div class="avatar mx-auto ">
-                <img src="https://avatars.githubusercontent.com/u/86385275?v=4"
-                    class="img-fluid rounded-circle z-depth-1" alt="Sample avatar">
-            </div>
-
-            <h5 class="font-weight-bold mt-4 mb-3 text-center">Barbara</h5>
-
-            <ul class="list-unstyled mb-0 d-flex justify-content-center">
-
-                <li>
-                    <!-- Github -->
-                    <a class="p-2 fa-lg ins-ic">
-                        <i class="fab fa-github blue-text"> </i>
-                    </a>
-                </li>
-                <li>
-                    <!-- LinkdIn -->
-                    <a class="p-2 fa-lg ins-ic">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </li>
-
-            </ul>
-
-        </div>
-        <!-- CARD 02 -->
+                                    </div>
+                                </div>
 
-        <!-- CARD 01 -->
-        <div class="col-md-2 shadow-drop-br p-3 ">
+                            </div>
 
-            <div class="avatar mx-auto ">
-                <img src="https://i.imgur.com/QdFwWqH.png" class="img-fluid rounded-circle z-depth-1"
-                    alt="Sample avatar">
-            </div>
-
-            <h5 class="font-weight-bold mt-4 mb-3 text-center">Barbara</h5>
-
-            <ul class="list-unstyled mb-0 d-flex justify-content-center">
-
-                <li>
-                    <!-- Github -->
-                    <a class="p-2 fa-lg ins-ic">
-                        <i class="fab fa-github blue-text"> </i>
-                    </a>
-                </li>
-                <li>
-                    <!-- LinkdIn -->
-                    <a class="p-2 fa-lg ins-ic">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </li>
-
-            </ul>
 
-        </div>
-        <!-- CARD 01 -->
-        <!-- CARD 01 -->
-        <div class="col-md-2 shadow-drop-br p-3 ">
 
-            <div class="avatar mx-auto ">
-                <img src="https://i.imgur.com/U04i6fL.jpg?1"
-                    class="img-fluid rounded-circle z-depth-1" alt="Sample avatar">
-            </div>
+                            <!-- Jumbotron -->
+                            <div class="jumbotron bg-white d-flex justify-content-center p-5">
 
-            <h5 class="font-weight-bold mt-4 mb-3 text-center">João Vitor</h5>
+                                <div>
+                                    <h1 class="display-4 text-center">Time de desenvolvimento</h1>
+                                    <p class="lead m-auto text-center">Usando a tecnologia para promover a igualdade</p>
+                                </div>
 
-            <ul class="list-unstyled mb-0 d-flex justify-content-center">
+                            </div>
+                            <!-- /Jumbotron -->
 
-                <li>
-                    <!-- Github -->
-                    <a class="p-2 fa-lg ins-ic">
-                        <i class="fab fa-github blue-text"> </i>
-                    </a>
-                </li>
-                <li>
-                    <!-- LinkdIn -->
-                    <a class="p-2 fa-lg ins-ic">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </li>
 
-            </ul>
 
-        </div>
-        <!-- CARD 01 -->
+                            <!-- SOBRE O TIME DE DESENVOLVIMENTO -->
+                            <div class="container">
 
-        <!-- CARD 01 -->
-        <div class="col-md-2 shadow-drop-br p-3 ">
+                                <div class="row">
+                                    <!-- CARD 01 -->
+                                    <div class="col-md-2 shadow-drop-br p-3 ">
 
-            <div class="avatar mx-auto ">
-                <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg"
-                    class="img-fluid rounded-circle z-depth-1" alt="Sample avatar">
-            </div>
+                                        <div class="avatar mx-auto ">
+                                            <img src="https://i.imgur.com/7mty7ml.jpg"
+                                                class="img-fluid rounded-circle z-depth-1" alt="Sample avatar">
+                                        </div>
 
-            <h5 class="font-weight-bold mt-4 mb-3 text-center">Barbara</h5>
+                                        <h5 class="font-weight-bold mt-4 mb-3 text-center">Barbara</h5>
+
+                                        <ul class="list-unstyled mb-0 d-flex justify-content-center">
+
+                                            <li>
+                                                <!-- Github -->
+                                                <a class="p-2 fa-lg ins-ic">
+                                                    <i class="fab fa-github blue-text"> </i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <!-- LinkdIn -->
+                                                <a class="p-2 fa-lg ins-ic">
+                                                    <i class="fab fa-linkedin"></i>
+                                                </a>
+                                            </li>
 
-            <ul class="list-unstyled mb-0 d-flex justify-content-center">
+                                        </ul>
+
+                                    </div>
+                                    <!-- CARD 01 -->
 
-                <li>
-                    <!-- Github -->
-                    <a class="p-2 fa-lg ins-ic">
-                        <i class="fab fa-github blue-text"> </i>
-                    </a>
-                </li>
-                <li>
-                    <!-- LinkdIn -->
-                    <a class="p-2 fa-lg ins-ic">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </li>
+                                    <!-- CARD 02 -->
+                                    <div class="col-md-2 shadow-drop-br p-3 ">
 
-            </ul>
+                                        <div class="avatar mx-auto ">
+                                            <img src="https://avatars.githubusercontent.com/u/86385275?v=4"
+                                                class="img-fluid rounded-circle z-depth-1" alt="Sample avatar">
+                                        </div>
+
+                                        <h5 class="font-weight-bold mt-4 mb-3 text-center">Barbara</h5>
+
+                                        <ul class="list-unstyled mb-0 d-flex justify-content-center">
+
+                                            <li>
+                                                <!-- Github -->
+                                                <a class="p-2 fa-lg ins-ic">
+                                                    <i class="fab fa-github blue-text"> </i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <!-- LinkdIn -->
+                                                <a class="p-2 fa-lg ins-ic">
+                                                    <i class="fab fa-linkedin"></i>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+
+                                    </div>
+                                    <!-- CARD 02 -->
 
-        </div>
-        <!-- CARD 01 -->
+                                    <!-- CARD 01 -->
+                                    <div class="col-md-2 shadow-drop-br p-3 ">
 
-        <!-- CARD 02 -->
-        <div class="col-md-2 swing p-3 ">
-
-            <div class="avatar mx-auto ">
-                <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg"
-                    class="img-fluid rounded-circle z-depth-1" alt="Sample avatar">
-            </div>
-
-            <h5 class="font-weight-bold mt-4 mb-3 text-center">Barbara</h5>
-
-            <ul class="list-unstyled mb-0 d-flex justify-content-center">
-
-                <li>
-                    <!-- Github -->
-                    <a class="p-2 fa-lg ins-ic">
-                        <i class="fab fa-github blue-text"> </i>
-                    </a>
-                </li>
-                <li>
-                    <!-- LinkdIn -->
-                    <a class="p-2 fa-lg ins-ic">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </li>
-
-            </ul>
-
-        </div>
-        <!-- CARD 01 -->
-
-    </div>
-</div>
-<!-- SOBRE O TIME DE DESENVOLVIMENTO -->
-
-
-
-<app-rodape></app-rodape>
+                                        <div class="avatar mx-auto ">
+                                            <img src="https://i.imgur.com/QdFwWqH.png"
+                                                class="img-fluid rounded-circle z-depth-1" alt="Sample avatar">
+                                        </div>
+
+                                        <h5 class="font-weight-bold mt-4 mb-3 text-center">Barbara</h5>
+
+                                        <ul class="list-unstyled mb-0 d-flex justify-content-center">
+
+                                            <li>
+                                                <!-- Github -->
+                                                <a class="p-2 fa-lg ins-ic">
+                                                    <i class="fab fa-github blue-text"> </i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <!-- LinkdIn -->
+                                                <a class="p-2 fa-lg ins-ic">
+                                                    <i class="fab fa-linkedin"></i>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+
+                                    </div>
+                                    <!-- CARD 01 -->
+                                    <!-- CARD 01 -->
+                                    <div class="col-md-2 shadow-drop-br p-3 ">
+
+                                        <div class="avatar mx-auto ">
+                                            <img src="https://i.imgur.com/U04i6fL.jpg?1"
+                                                class="img-fluid rounded-circle z-depth-1" alt="Sample avatar">
+                                        </div>
+
+                                        <h5 class="font-weight-bold mt-4 mb-3 text-center">João Vitor</h5>
+
+                                        <ul class="list-unstyled mb-0 d-flex justify-content-center">
+
+                                            <li>
+                                                <!-- Github -->
+                                                <a class="p-2 fa-lg ins-ic">
+                                                    <i class="fab fa-github blue-text"> </i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <!-- LinkdIn -->
+                                                <a class="p-2 fa-lg ins-ic">
+                                                    <i class="fab fa-linkedin"></i>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+
+                                    </div>
+                                    <!-- CARD 01 -->
+
+                                    <!-- CARD 01 -->
+                                    <div class="col-md-2 shadow-drop-br p-3 ">
+
+                                        <div class="avatar mx-auto ">
+                                            <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg"
+                                                class="img-fluid rounded-circle z-depth-1" alt="Sample avatar">
+                                        </div>
+
+                                        <h5 class="font-weight-bold mt-4 mb-3 text-center">Barbara</h5>
+
+                                        <ul class="list-unstyled mb-0 d-flex justify-content-center">
+
+                                            <li>
+                                                <!-- Github -->
+                                                <a class="p-2 fa-lg ins-ic">
+                                                    <i class="fab fa-github blue-text"> </i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <!-- LinkdIn -->
+                                                <a class="p-2 fa-lg ins-ic">
+                                                    <i class="fab fa-linkedin"></i>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+
+                                    </div>
+                                    <!-- CARD 01 -->
+
+                                    <!-- CARD 02 -->
+                                    <div class="col-md-2 swing p-3 ">
+
+                                        <div class="avatar mx-auto ">
+                                            <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg"
+                                                class="img-fluid rounded-circle z-depth-1" alt="Sample avatar">
+                                        </div>
+
+                                        <h5 class="font-weight-bold mt-4 mb-3 text-center">Barbara</h5>
+
+                                        <ul class="list-unstyled mb-0 d-flex justify-content-center">
+
+                                            <li>
+                                                <!-- Github -->
+                                                <a class="p-2 fa-lg ins-ic">
+                                                    <i class="fab fa-github blue-text"> </i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <!-- LinkdIn -->
+                                                <a class="p-2 fa-lg ins-ic">
+                                                    <i class="fab fa-linkedin"></i>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+
+                                    </div>
+                                    <!-- CARD 01 -->
+
+                                </div>
+                            </div>
+                            <!-- SOBRE O TIME DE DESENVOLVIMENTO -->
+                            <app-rodape></app-rodape>

@@ -1,15 +1,17 @@
-<div class="container-fluid bg-color">
-
-  <div class="row d-flex justify-content-center ">
-
-    <!-- <div class="col-md-6" id='img-bg'></div> -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6 d-flex align-items-end" >
+      <img src="https://i.imgur.com/r5JdT6C.png" width="700px" height="700px">
+    </div>
 
     <div class="col-md-6 mt-5 mb-5">
 
-      <div class="row d-flex justify-content-center ft ">
-        <div class="col-md-10 bg-back p-5 rounded">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-10">
 
-          <h4 class="text-center">Cadastro</h4>
+          <div class="">
+            <h1 class="text-center letra ">Cadastro</h1>
+          </div>
 
           <div class="form-group">
             <label for="nome">Nome</label>
@@ -42,13 +44,13 @@
           </div>
 
           <div class="form-group">
-              <label for="tipo">Tipo de Usuário</label>
-              <select class="form-control" name="tipo" id="tipo" (change)='tipoUser($event)'>
-                <option>Selecione um tipo de usuário:</option>
-                <option value="normal">Normal</option>
-                <option value="adm">Administrador</option>
-              </select>
-            </div>
+            <label for="tipo">Tipo de Usuário</label>
+            <select class="form-control" name="tipo" id="tipo" (change)='tipoUser($event)'>
+              <option>Selecione um tipo de usuário:</option>
+              <option value="normal">Normal</option>
+              <option value="adm">Administrador</option>
+            </select>
+          </div>
 
           <div class="d-flex justify-content-center mt-5 mb-2">
             <button type="submit" class="btn bg-color mr-4 radius" routerLink='/entrar'>Cancelar</button>
