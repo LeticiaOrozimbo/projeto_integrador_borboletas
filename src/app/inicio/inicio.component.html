@@ -1,13 +1,13 @@
 <!-- Navbar -->
-<app-menu></app-menu>
+
 <!-- Navbar -->
 
 <!-- CARROSEL -->
 <div id="carouselExampleControls" class="carousel slide mt-4" data-ride="carousel">
-    <div class="carousel-inner carrocel-inicio">
+    <div class="carousel-inner carrocel-inicio bg-color">
         <div class="carousel-item active">
             <!-- Titulo Princípal = O PROJETO ! -->
-            <div class="container z-depth-1">
+            <div class="container z-depth-1 bg-color">
                 <div class="row">
                     <div class="col-md-8 d-flex align-items-center">
 
@@ -49,7 +49,7 @@
                             <h3 class="font-weight-bold my-3">Já não está na hora de de começar seu próprio negocio?
                             </h3>
 
-                            <p class="text-muted mb-4 pb-2">Os nossos grandes erros não envolvem o medo da
+                            <p class="mb-4 pb-2 text">Os nossos grandes erros não envolvem o medo da
                                 transformação, mas a
                                 paralisação que aceitamos viver para não sofrer o dano. Tire o tempo necessário para
                                 realizar esse
@@ -58,7 +58,7 @@
 
                             <small class="form-text black-text carousel-item01-text">
                                 <strong>
-                                    <a href="#">
+                                    <a class="semi" href="#">
                                         Que tal começar pelo seu cadastro?
                                     </a>
                                 </strong>
@@ -91,7 +91,7 @@
                         <div class="col-md-5 d-flex align-items-center">
                             <div>
 
-                                <h3 class="font-weight-bold mb-4">Também ama música?</h3>
+                                <h3 class="font-weight-bold mb-4 semi">Também ama música?</h3>
 
                                 <p>Então já passou da hora de aprender a tocar alguns instrumento! Encontre ótimos
                                     professores aqui
@@ -161,8 +161,8 @@
                 <div class="col-md-12 card-group nowrap">
                     <div class="card mb-2 mr-4" *ngFor="let item of listaProduto">
                         <!-- <div ng-if="item.categoria == 'roupas'"> -->
-                        <img class="card-img-top" src="{{item.foto}}" alt="Card image cap">
-                        <div class="card-body">
+                        <img class="card-img-top" src="{{item.foto}}" height="200px" width="100px" alt="Card image cap">
+                        <div class="card-body border">
                             <h4 class="card-title">{{item.nome}}</h4>
                             <p class="card-text">R$: {{item.preco}}</p>
                             <a class="btn btn-color">Comprar</a>
@@ -516,4 +516,3 @@
                                 </div>
                             </div>
                             <!-- SOBRE O TIME DE DESENVOLVIMENTO -->
-                            <app-rodape></app-rodape>
