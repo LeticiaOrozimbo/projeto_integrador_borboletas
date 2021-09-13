@@ -19,4 +19,32 @@ ul.social-network li{
     font-size: 20pt;
     padding: 10px;
 }
+.color{
+    background: blueviolet;
+}
+.color-2{
+    background: white;
+}
+.c-white{
+    color: white;
+}
+
+.fs-2{
+    size: 5px;
+}
+h5{
+    font-size: 12pt;
+    color: white;
+}
+
+.navbar-brand img {
+    height: 60px;
+    /* width: 45px; */
+}
+
+.img-nav {
+    height: 100px;
+}
+
+
 
