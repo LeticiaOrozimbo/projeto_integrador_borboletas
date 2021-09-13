@@ -1,13 +1,12 @@
-
 <div class="container-fluid barra">
-  
+
     <div class="row fundo d-flex align-items-center">
         <div class="col-md-6">
 
             <a routerLink='/inicio' class="text-white text-left">
                 <i class="fa fa-angle-double-left" aria-hidden="true"></i> início
-              </a>
-  
+            </a>
+
             <div class="row d-flex justify-content-center">
                 <div class="col-md-6 text-white">
                     <h1 class="fs-54">Produtos</h1>
@@ -16,21 +15,23 @@
             </div>
             <div class="row d-flex justify-content-center mt-3 mb-5">
                 <div class="col-md-6">
+
                     <button class="btn button form mr-2 p-2 txt" data-toggle="modal"
                         data-target="#novaPostagem">Cadastrar um Produto</button>
+
                     <a class="btn button form mt-2 p-2" href="#postagens">Ver os Produtos</a>
                 </div>
             </div>
         </div>
-  
+
         <!------Imagem ao Lado----->
         <div class="col-md-6 d-flex justify-content-center">
             <img src="https://i.imgur.com/LXuv4Qk.png" alt="" width="400px" height="400px">
         </div>
-  
+
     </div>
-  </div>
-  
+</div>
+
 
 
 <div class="container">
@@ -94,45 +95,54 @@
             <div class="modal-body">
                 <div class="form-group">
                     <input [(ngModel)]='produto.nome' type="text" class="form-control mb-1" id="nome"
-                            placeholder="Digite o nome">
+                        placeholder="Digite o nome">
                 </div>
 
-                <div class="form-group">
-                    <input [(ngModel)]='produto.preco' type="text" class="form-control mb-1" id="preco"
-                            placeholder="Digite o preço">
+                <div class="d-flex justify-content-between">
+
+                    <div class="form-group mr-1 w-50">
+                        <input [(ngModel)]='produto.preco' type="number" class="form-control mb-1" id="preco"
+                            placeholder="Digite o preço" min="0" max="999999" width="50px">
+                    </div>
+
+                    <div class="form-group ml-1 w-50">
+                        <input [(ngModel)]='produto.quantidade' type="number" class="form-control mb-1" id="quantidade"
+                            placeholder="Digite a quantidade" min="0" max="999999">
+                    </div>
                 </div>
 
-                <div class="form-group">
-                    <input [(ngModel)]='produto.quantidade' type="text" class="form-control mb-1" id="quantidade"
-                            placeholder="Digite a quantidade">
-                </div>
+
 
                 <div class="form-group">
                     <input [(ngModel)]='produto.foto' type="text" class="form-control mb-1" id="foto"
-                            placeholder="Insira o link da foto">
+                        placeholder="Insira o link da foto">
                 </div>
 
                 <div class="form-group">
-                    <input [(ngModel)]='produto.descricao' type="text" class="form-control mb-1" id="descricao"
-                            placeholder="Insira uma descrição">
+                    <textarea [(ngModel)]='produto.descricao' type="text" class="form-control mb-1" id="descricao"
+                        placeholder="Insira uma descrição" rows="5" cols="80">
+
+                    <!--   </textarea> -->
                 </div>
 
                 <div class="form-group">
-                    <label for="titulo">Escolha uma categoria ou <a data-dismiss="modal" routerLink='/categorias'>cadastre uma
+                    <label for="titulo">Escolha uma categoria ou <a data-dismiss="modal"
+                            routerLink='/categorias'>cadastre uma
                             nova</a>: </label>
-                            <select name="categoria" id="categoria" class="form-control" [(ngModel)]='idCategoria'
-                            (change)='findByIdCategoria()'>
-                            <option *ngFor='let item of listaCategoria' value="{{item.id}}">
-                                {{item.descricao}}
-                            </option>
-                        </select>
+                    <select name="categoria" id="categoria" class="form-control" [(ngModel)]='idCategoria'
+                        (change)='findByIdCategoria()'>
+                        <option *ngFor='let item of listaCategoria' value="{{item.id}}">
+                            {{item.descricao}}
+                        </option>
+                    </select>
                 </div>
 
             </div>
             <div class="modal-footer">
 
                 <button type="button" class="btn button" data-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn button" (click)='criandoProduto()' data-dismiss="modal">Registrar</button>
+                <button type="button" class="btn button" (click)='criandoProduto()'
+                    data-dismiss="modal">Registrar</button>
             </div>
         </div>
     </div>
