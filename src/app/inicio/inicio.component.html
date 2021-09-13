@@ -155,54 +155,46 @@
         <!-- <div class="carousel-inner" role="listbox"> -->
 
         <!--First slide-->
-        <div class="carousel-item active">
-
-            <div class="row">
-                <!-- <div class="col-md-8 card-group"> -->
-                    <div class="card-group col-md-12 d-flex justify-content-left">
-                        <div *ngFor="let item of listaProduto" class="mr-3">
-                            <div *ngIf="item.categoria.descricao == 'roupas'">
-
-                                <img class="card-img-top" src="{{item.foto}}" height="200px" width="100px"
-                                    alt="Card image cap">
-                                <div class="card-body border">
-                                    <h4 class="card-title">{{item.nome}}</h4>
-                                    <p class="card-text">R$: {{item.preco}}</p>
-                                    <!-- Button trigger modal -->
-                                    <!-- Button trigger modal -->
-                                    <button type="button" class="btn btn-color" data-toggle="modal"
-                                        data-target="#exampleModal">
-                                        Comprar </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- </div> -->
-                    </div>
-                </div>
+        
             <!-- </div> -->
 
-            <hr class="mt-4">
+            <div class="carousel-item active">
 
+                <div class="row">
+                        <div class="card-group col-md-12 d-flex justify-content-left">
+                            <div *ngFor="let item of listaProduto" class="ml-3">
+                                <div *ngIf="item.categoria.descricao == 'roupas'" class="bottom">
+    
+                                    <img class="card-img-top" src="{{item.foto}}" height="200px" width="100px"
+                                        alt="Card image cap">
+                                    <div class="card-body border">
+                                        <h4 class="card-title">{{item.nome}}</h4>
+                                        <p class="card-text">R$: {{item.preco}}</p>
+                                        <!-- Button trigger modal -->
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-color a" data-toggle="modal"
+                                            data-target="#exampleModal">
+                                            Comprar </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- </div> -->
+                        </div>
+                    </div>
 
             <div class="container mt-5">
                 <h5 class="ml-5"> <img src="https://i.imgur.com/vCDGKEZ.png" height="38px" width="150px"> </h5>
                 <hr class="mb-4">
                 <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
 
-                    <!--Controls-->
-                    <!-- <div class="controls-top  d-flex justify-content-center">
-              <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
-              <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
-            </div> -->
-                    <!--/.Controls-->
+                    
 
                     <div class="carousel-item active">
 
                         <div class="row">
-                            <!-- <div class="col-md-8 card-group"> -->
-                                <div class="card-group col-md-12 d-flex justify-content-left">
+                                <div class="card-group col-md-12 d-flex justify-content-center">
                                     <div *ngFor="let item of listaProduto" class="mr-3">
-                                        <div *ngIf="item.categoria.descricao == 'Oculos'">
+                                        <div *ngIf="item.categoria.descricao == 'Oculos'"  class="bottom">
             
                                             <img class="card-img-top" src="{{item.foto}}" height="200px" width="100px"
                                                 alt="Card image cap">
@@ -211,7 +203,7 @@
                                                 <p class="card-text">R$: {{item.preco}}</p>
                                                 <!-- Button trigger modal -->
                                                 <!-- Button trigger modal -->
-                                                <button type="button" class="btn btn-color" data-toggle="modal"
+                                                <button type="button" class="btn btn-color a" data-toggle="modal"
                                                     data-target="#exampleModal">
                                                     Comprar </button>
                                             </div>

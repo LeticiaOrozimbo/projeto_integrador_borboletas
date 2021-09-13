@@ -194,13 +194,13 @@ header {
     font-family: 'Popins';
 }
 
-a:not([href]):not([tabindex]) {
+.a {
     color: white;
     text-decoration: none;
     font-family: 'Poppins';
 }
 
-.card.mb-2.mr-4 {
+.bottom {
     border-bottom: 5px solid #7756b8;
 }
 .shadow-drop-br:hover {
