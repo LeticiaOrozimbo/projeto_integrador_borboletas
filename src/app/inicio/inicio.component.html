@@ -132,7 +132,7 @@
 <!-- /Jumbotron -->
 <!-- Cards Produtos -->
 <div class="container">
-    <h5 class="ml-5"> <img src="https://i.imgur.com/vCDGKEZ.png" height="50px" width="150px"> </h5>
+    <h5 class="ml-5"> <img src="https://i.imgur.com/vCDGKEZ.png" height="38px" width="150px"> </h5>
     <hr class="mb-4">
     <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
 
@@ -165,7 +165,12 @@
                         <div class="card-body border">
                             <h4 class="card-title">{{item.nome}}</h4>
                             <p class="card-text">R$: {{item.preco}}</p>
-                            <a class="btn btn-color">Comprar</a>
+                           <!-- Button trigger modal -->
+                         <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
                         </div>
                     </div>
                     <!-- </div> -->
@@ -177,7 +182,7 @@
 
 
             <div class="container mt-5">
-                <h5 class="ml-5"> <img src="https://i.imgur.com/bW3BXew.png" height="50px" width="50px"> Eletros </h5>
+                <h5 class="ml-5"> <img src="https://i.imgur.com/vCDGKEZ.png" height="38px" width="150px"> </h5>
                 <hr class="mb-4">
                 <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
 
@@ -211,7 +216,7 @@
                                         <div class="card-body">
                                             <h4 class="card-title">{{item.nome}}</h4>
                                             <p class="card-text">R$: {{item.preco}}</p>
-                                            <a class="btn btn-color">Comprar</a>
+                                            <a class="btn btn-color" data-bs-toggle="modal" data-bs-target="#exampleModal">Comprar</a>
                                         </div>
                                     </div>
                                 </div>
@@ -493,3 +498,24 @@
                                 </div>
                             </div>
                             <!-- SOBRE O TIME DE DESENVOLVIMENTO -->
+
+                         <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>

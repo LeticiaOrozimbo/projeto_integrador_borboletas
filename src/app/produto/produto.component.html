@@ -51,6 +51,7 @@
                         <th scope="col">Nome</th>
                         <th scope="col">Preço</th>
                         <th scope="col">Quantidade</th>
+                        <th scope="col">categoria</th>
                         <th scope="col" class="text-right">Modificações</th>
 
                     </tr>
@@ -58,16 +59,20 @@
 
                 <tbody>
                     <tr *ngFor='let item of listaProduto'>
+<div *ngIf="item.categoria.descricao == 'roupas'"> 
 
-                        <th>{{item.id}}</th>
-                        <td>{{item.nome}}</td>
-                        <td>{{item.preco}}</td>
-                        <td>{{item.quantidade}}</td>
+    <th>{{item.id}}</th>
+    <td>{{item.nome}}</td>
+    <td>{{item.preco}}</td>
+    <td>{{item.quantidade}}</td>
+    <td>{{item.categoria.descricao}}</td>
+    <td class="d-flex justify-content-end">
+        <button class="btn button mr-3" [routerLink]="['/produto-edit', item.id]">Editar</button>
+        <button class="btn button" [routerLink]="['/produto-delete', item.id]">Apagar</button>
+    </td>   
 
-                        <td class="d-flex justify-content-end">
-                            <button class="btn button mr-3" [routerLink]="['/produto-edit', item.id]">Editar</button>
-                            <button class="btn button" [routerLink]="['/produto-delete', item.id]">Apagar</button>
-                        </td>
+</div>
+                       
                     </tr>
 
                 </tbody>
