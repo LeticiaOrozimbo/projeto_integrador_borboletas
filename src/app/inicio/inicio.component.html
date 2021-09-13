@@ -158,24 +158,23 @@
         <div class="carousel-item active">
 
             <div class="row">
-                <div class="col-md-12 card-group nowrap">
-                    <div class="card mb-2 mr-4" *ngFor="let item of listaProduto">
-                        <!-- <div ng-if="item.categoria == 'roupas'"> -->
+                <div class="col-md-12 card-group wrap">
+                    <div class="card mb-2 mr-4" *ngFor="let item of listaProduto" >
+                        <div *ngIf="item.categoria.descricao == 'roupas'">
                         <img class="card-img-top" src="{{item.foto}}" height="200px" width="100px" alt="Card image cap">
                         <div class="card-body border">
                             <h4 class="card-title">{{item.nome}}</h4>
                             <p class="card-text">R$: {{item.preco}}</p>
                            <!-- Button trigger modal -->
                          <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-    Launch demo modal
-  </button>
+<button type="button" class="btn btn-color" data-toggle="modal" data-target="#exampleModal">
+Comprar  </button>
   
                         </div>
                     </div>
                     <!-- </div> -->
                 </div>
-
+            </div>
             </div>
 
             <hr class="mt-4">
@@ -209,9 +208,11 @@
 
                             <div class="row">
                                 <div class="col-md-12 card-group nowrap">
-                                    <div class="card mb-2 mr-4" *ngFor="let item of listaProduto; let i=index">
+                                    <div class="card mb-2 mr-4" *ngFor="let item of listaProduto">
+                                        <div *ngIf="item.categoria.descricao == 'Oculos'">
+
                                         <img class="card-img-top"
-                                            src="https://brastemp.vtexassets.com/arquivos/ids/213732/Geladeira-BRE80AK-Frontal.jpg?v=637298140570900000"
+                                            src="{{item.foto}}"
                                             alt="Card image cap">
                                         <div class="card-body">
                                             <h4 class="card-title">{{item.nome}}</h4>
@@ -219,6 +220,7 @@
                                             <a class="btn btn-color" data-bs-toggle="modal" data-bs-target="#exampleModal">Comprar</a>
                                         </div>
                                     </div>
+                                </div>
                                 </div>
 
                             </div>
