@@ -10,16 +10,24 @@
   background-color: rgb(223, 223, 223);
 }
 
-.radius {
+ .radius {
   border-radius: 20px 20px 20px 20px;
 }
 
 .bg-color {
   background-color: #7756b8;
-}
+} 
 
-button {
+button{
+  border-radius: 20px 20px 20px 20px;
+  background-color: #7756b8;
   color: white;
+  font-weight: bold;
+  font-family: 'Poppins';    
+  }
+button:hover{
+  background-color: white;
+  color: #7756b8;
 }
 
 .ft {

@@ -16,9 +16,6 @@
     padding-top: 0;
 }
 
-.navbar .nav-link {
-    /* color: #444343 !important; */
-}
 
 .navbar .button-collapse {
     padding-top: 1px;
@@ -68,3 +65,7 @@
     font-size: 40pt;
 }
 /* NAV V2 */
+
+.fs-2{
+    color: blueviolet;
+}
