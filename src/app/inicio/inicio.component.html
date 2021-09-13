@@ -132,7 +132,7 @@
 <!-- /Jumbotron -->
 <!-- Cards Produtos -->
 <div class="container">
-    <h5 class="ml-5"> <img src="https://i.imgur.com/vCDGKEZ.png" height="50px" width="150px"> </h5>
+    <h5 class="ml-5"> <img src="https://i.imgur.com/vCDGKEZ.png" height="38px" width="150px"> </h5>
     <hr class="mb-4">
     <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
 
@@ -155,67 +155,62 @@
         <!-- <div class="carousel-inner" role="listbox"> -->
 
         <!--First slide-->
-        <div class="carousel-item active">
+        
+            <!-- </div> -->
 
-            <div class="row">
-                <div class="col-md-12 card-group nowrap">
-                    <div class="card mb-2 mr-4 grow" *ngFor="let item of listaProduto">
-                        <!-- <div ng-if="item.categoria == 'roupas'"> -->
-                        <img class="card-img-top" src="{{item.foto}}" height="200px" width="100px" alt="Card image cap">
-                        <div class="card-body border">
-                            <h4 class="card-title">{{item.nome}}</h4>
-                            <p class="card-text">R$: {{item.preco}}</p>
-                            <a class="btn btn-color">Comprar</a>
+            <div class="carousel-item active">
+
+                <div class="row">
+                        <div class="card-group col-md-12 d-flex justify-content-left">
+                            <div *ngFor="let item of listaProduto" class="ml-3">
+                                <div *ngIf="item.categoria.descricao == 'roupas'" class="bottom">
+    
+                                    <img class="card-img-top" src="{{item.foto}}" height="200px" width="100px"
+                                        alt="Card image cap">
+                                    <div class="card-body border">
+                                        <h4 class="card-title">{{item.nome}}</h4>
+                                        <p class="card-text">R$: {{item.preco}}</p>
+                                        <!-- Button trigger modal -->
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-color a" data-toggle="modal"
+                                            data-target="#exampleModal">
+                                            Comprar </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- </div> -->
                         </div>
                     </div>
-                    <!-- </div> -->
-                </div>
-
-            </div>
-
-            <hr class="mt-4">
-
 
             <div class="container mt-5">
-                <h5 class="ml-5"> <img src="https://i.imgur.com/bW3BXew.png" height="50px" width="50px"> Eletros </h5>
+                <h5 class="ml-5"> <img src="https://i.imgur.com/vCDGKEZ.png" height="38px" width="150px"> </h5>
                 <hr class="mb-4">
                 <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
 
-                    <!--Controls-->
-                    <!-- <div class="controls-top  d-flex justify-content-center">
-              <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
-              <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
-            </div> -->
-                    <!--/.Controls-->
+                    
 
-                    <!--Indicators-->
-                    <ol class="carousel-indicators">
-                        <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
-                        <li data-target="#multi-item-example" data-slide-to="1"></li>
-                        <li data-target="#multi-item-example" data-slide-to="2"></li>
-                    </ol>
-                    <!--/.Indicators-->
+                    <div class="carousel-item active">
 
-                    <!--Slides-->
-                    <div class="carousel-inner" role="listbox">
-
-                        <!--First slide-->
-                        <div class="carousel-item active">
-
-                            <div class="row">
-                                <div class="col-md-12 card-group nowrap">
-                                    <div class="card mb-2 mr-4 grow" *ngFor="let item of listaProduto; let i=index">
-                                        <img class="card-img-top"
-                                            src="https://brastemp.vtexassets.com/arquivos/ids/213732/Geladeira-BRE80AK-Frontal.jpg?v=637298140570900000"
-                                            alt="Card image cap">
-                                        <div class="card-body">
-                                            <h4 class="card-title">{{item.nome}}</h4>
-                                            <p class="card-text">R$: {{item.preco}}</p>
-                                            <a class="btn btn-color">Comprar</a>
+                        <div class="row">
+                                <div class="card-group col-md-12 d-flex justify-content-center">
+                                    <div *ngFor="let item of listaProduto" class="mr-3">
+                                        <div *ngIf="item.categoria.descricao == 'Oculos'"  class="bottom">
+            
+                                            <img class="card-img-top" src="{{item.foto}}" height="200px" width="100px"
+                                                alt="Card image cap">
+                                            <div class="card-body border">
+                                                <h4 class="card-title">{{item.nome}}</h4>
+                                                <p class="card-text">R$: {{item.preco}}</p>
+                                                <!-- Button trigger modal -->
+                                                <!-- Button trigger modal -->
+                                                <button type="button" class="btn btn-color a" data-toggle="modal"
+                                                    data-target="#exampleModal">
+                                                    Comprar </button>
+                                            </div>
                                         </div>
                                     </div>
+                                    <!-- </div> -->
                                 </div>
-
                             </div>
                             <hr class="mt-4">
 
@@ -274,15 +269,19 @@
 
                                     <div class="col-md-6">
 
-        
-                                            <h3 class="text-center">Objetivo</h3>
+
+                                        <h3 class="text-center">Objetivo</h3>
 
                                         <div class="mt-4">
-                                            
-                                                <p>
-                                                    O preconceito, a discriminação e a violência referente à identidade de gênero são observadas na vida da população transgênero em diversos aspectos e, inclusive, no ambiente educacional e no mercado de trabalho. Reconhecer as diferenças e ampará-las é fundamental para incluir os grupos de minorias que compõem nossa sociedade.
-    
-                                                </p>
+
+                                            <p>
+                                                O preconceito, a discriminação e a violência referente à identidade de
+                                                gênero são observadas na vida da população transgênero em diversos
+                                                aspectos e, inclusive, no ambiente educacional e no mercado de trabalho.
+                                                Reconhecer as diferenças e ampará-las é fundamental para incluir os
+                                                grupos de minorias que compõem nossa sociedade.
+
+                                            </p>
 
 
                                         </div>
@@ -312,7 +311,7 @@
 
                                 <div class="row">
                                     <!-- CARD 01 -->
-                                    <div class="col-md-2 shadow-drop-br p-3 ">
+                                    <div class="col-md-2 shadow-drop-br card-time-devs p-3 ">
 
                                         <div class="avatar mx-auto ">
                                             <img src="https://i.imgur.com/7mty7ml.jpg"
@@ -493,3 +492,26 @@
                                 </div>
                             </div>
                             <!-- SOBRE O TIME DE DESENVOLVIMENTO -->
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            ...
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
