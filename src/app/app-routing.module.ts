@@ -24,7 +24,7 @@ const routes: Routes = [
   { path: 'produto-delete/:id', component: ProdutoDeleteComponent}
   
 ];
-// Nós não suportamos mais, viemos ate aqui.
+
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

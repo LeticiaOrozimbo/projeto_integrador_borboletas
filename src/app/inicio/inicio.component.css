@@ -46,7 +46,7 @@
     background: linear-gradient(90deg, #ae10df 37%, rgba(0, 173, 249, 1) 77%, rgba(0, 170, 249, 1) 100%);
     background-size: 100%;
     background-repeat: repeat;
-    -webkit-background-clip: text;
+    /* -webkit-background-clip: text; */
     -webkit-text-fill-color: transparent;
     animation: rainbow-text-simple-animation-rev 0.70s ease forwards;
 }
@@ -163,13 +163,13 @@ header {
 
 /* TITULP = Conheça os Produtos*/
 
-.home-header-img {}
+
 
 .home-carousel-texto-item01 {
     font-size: 72px;
     font-family: 'Lobster', cursive;
     background: -webkit-linear-gradient(#eee, #333);
-    -webkit-background-clip: text;
+    /* -webkit-background-clip: text; */
     -webkit-text-fill-color: transparent;
 }
 
@@ -250,4 +250,10 @@ header {
               box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35);
     }
   }
+
+
+
+
+
+
   
