@@ -18,6 +18,7 @@ import { ProdutoComponent } from './produto/produto.component';
 import { ProdutoDeleteComponent } from './delete/produto-delete/produto-delete.component';
 import { ProdutoEditComponent } from './edit/produto-edit/produto-edit.component';
 import { TesteInicioComponent } from './teste-inicio/teste-inicio.component';
+import { ComprarComponent } from './comprar/comprar.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { TesteInicioComponent } from './teste-inicio/teste-inicio.component';
     ProdutoComponent,
     ProdutoDeleteComponent,
     ProdutoEditComponent,
-    TesteInicioComponent
+    TesteInicioComponent,
+    ComprarComponent
     ],
   imports: [
     BrowserModule,
