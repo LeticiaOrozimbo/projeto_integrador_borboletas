@@ -1,16 +1,19 @@
 <div class="container-fluid ">
-    <div class="row d-flex align-items-center p-5 bg-color">
-        <div class="col-md-6 d-flex justify-content-center">
-            
-           <img src="https://cea.vtexassets.com/arquivos/ids/11449113-800-auto?width=800&height=auto&aspect=true" height="400px" width="300px">
+    <div *ngFor="let item of listaProduto">
+        <div class="row d-flex align-items-center p-5 bg-color">
+            <div class="col-md-6 d-flex justify-content-center">
 
-        </div>
-        <div class="col-md-6">
-            <h1> Camisa Listrada </h1>
-            <hr>
-            
-            <h4> João Vitor | contato: joao@joao.com</h4>
-            <h5> R$: 50,00</h5>
+                <img src="https://cea.vtexassets.com/arquivos/ids/11449113-800-auto?width=800&height=auto&aspect=true"
+                    height="400px" width="300px">
+
+            </div>
+            <div class="col-md-6">
+                <h1> Camisa Listrada </h1>
+                <hr>
+
+                <h4> João Vitor | contato: joao@joao.com</h4>
+                <h5> R$: 50,00</h5>
+            </div>
         </div>
     </div>
 </div>
