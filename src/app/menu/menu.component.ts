@@ -11,6 +11,8 @@ import { AuthService } from '../service/auth.service';
 })
 export class MenuComponent implements OnInit {
 
+  foto = environment.foto
+
   usuarioDTO: UsuarioDTO = new UsuarioDTO()
 
   constructor(
@@ -21,6 +23,8 @@ export class MenuComponent implements OnInit {
 
   ngOnInit() {
     window.scroll(0, 0)
+
+    console.log(this.foto)
 
     // TESTE PARA FOTO (EXCLUIR) 
     // environment.foto = this.usuarioDTO.foto
