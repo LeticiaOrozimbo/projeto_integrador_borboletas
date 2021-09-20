@@ -1,8 +1,3 @@
-<!-- Navbar -->
-
-<!-- Navbar -->
-
-<!-- CARROSEL -->
 <app-menu></app-menu>
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner carrocel-inicio barra">
@@ -11,52 +6,39 @@
             <div class="container z-depth-1 ">
                 <div class="row">
                     <div class="col-md-8 d-flex justify-content-center">
-
                         <header>
                             <h1 class=" text home-nome-projeto">Borboletas</h1>
                         </header>
                         <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap"
                             rel="stylesheet">
-
                     </div>
-
                     <div class="col-md-4 home-header-img">
-
-
                     </div>
                 </div>
-
             </div>
             <!-- /Titulo Princípal = O PROJETO ! -->
-
         </div>
         <div class="carousel-item">
             <!-- CAROUSEL ITEM 03 = EMPREENDA AGORA ! -->
             <div class="container z-depth-1">
                 <div class="row">
                     <div class="col-md-5 mb-4 mb-md-0 mt-5">
-
                         <div class="view">
                             <img src="https://i.imgur.com/zWFqwuT.png" height="250px" width="250px"
                                 class="img-fluid rounded mx-auto d-block" alt="smaple image">
                         </div>
-
                     </div>
                     <div class="col-md-7 mb-lg-0 mb-4 d-flex align-items-center">
-
                         <div class="">
-
                             <!-- Section heading -->
                             <h3 class="font-weight-bold my-3">Já não está na hora de começar seu próprio negocio?
                             </h3>
-
                             <p class="mb-4 pb-2 text">Os nossos grandes erros não envolvem o medo da
                                 transformação, mas a
                                 paralisação que aceitamos viver para não sofrer o dano. Tire o tempo necessário para
                                 realizar esse
                                 processo de metamorfose e empreenda novos tempos na sua vida!
                             </p>
-
                             <small class="form-text black-text carousel-item01-text">
                                 <strong>
                                     <a class="semi" href="#">
@@ -65,35 +47,26 @@
                                 </strong>
                             </small>
                         </div>
-
                     </div>
                 </div>
             </div>
             <!-- /CAROUSEL ITEM = EMPREENDA AGORA ! -->
-
-
         </div>
         <div class="carousel-item">
             <!-- CAROUSEL ITEM = MUSICA ! -->
             <div class="container my-5 z-depth-1">
-
                 <!--Section: Content-->
                 <section class="dark-grey-text">
-
                     <div class="row pr-lg-5">
                         <div class="col-md-7 mb-4">
-
                             <div class="view">
                                 <img src="https://i.imgur.com/XQffDuP.png" height="250px" width="250px"
                                     class="img-fluid rounded mx-auto d-block" alt="smaple image">
                             </div>
-
                         </div>
                         <div class="col-md-5 d-flex align-items-center">
                             <div>
-
                                 <h3 class="font-weight-bold mb-4 semi">Também ama música?</h3>
-
                                 <p>Então já passou da hora de aprender a tocar alguns instrumento! Encontre ótimos
                                     professores aqui
                                     no borboletas!</p>
@@ -103,15 +76,10 @@
                             </div>
                         </div>
                     </div>
-
                 </section>
                 <!--Section: Content-->
-
-
             </div>
             <!--/ CAROUSEL ITEM = MUSICA ! -->
-
-
         </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -122,460 +90,295 @@
     </a>
 </div>
 <!--/CARROSEL -->
-
-
 <!-- Jumbotron -->
 <div class="jumbotron bg-white d-flex justify-content-center p-5">
     <div>
         <h1 class="display-4 focus-in-contract-bck">Conheça os produtos</h1>
     </div>
 </div>
-<!-- /Jumbotron -->
-<!-- Cards Produtos -->
 <div class="container">
+    <!-----Primeiro Cards Roupas----->
     <h5 class="ml-5"> <img src="https://i.imgur.com/vCDGKEZ.png" height="40px" width="150px"> </h5>
     <hr class="mb-4">
-    <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
-
-        <!--Controls-->
-        <!-- <div class="controls-top d-flex justify-content-center">
-          <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
-          <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
-        </div> -->
-        <!--/.Controls-->
-
-        <!--Indicators-->
-        <!-- <ol class="carousel-indicators">
-          <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
-          <li data-target="#multi-item-example" data-slide-to="1"></li>
-          <li data-target="#multi-item-example" data-slide-to="2"></li>
-        </ol> -->
-        <!--/.Indicators-->
-
-        <!--Slides-->
-        <!-- <div class="carousel-inner" role="listbox"> -->
-
-        <!--First slide-->
-
-        <!-- </div> -->
-
-        <div class="carousel-item active ">
-
-            <div class="row ">
-                <div class="card-group col-md-12 d-flex justify-content-left ml-2" >
-                    <div *ngFor="let item of listaProduto">
-                        <div *ngIf="item.categoria.descricao == 'roupas'" class="bottom">
-                            <img class="card-img-top grow" src="{{item.foto}}" height="200px" width="100px"
-                                alt="Card image cap">
-                            <div class="card-body border ">
-                                <h4 class="card-title">{{item.nome}}</h4>
-                                <p class="card-text">R$: {{item.preco}}</p>
-                                <!-- Button trigger modal -->
-                                <!-- Button trigger modal -->
-                                <button type="button" class="btn btn-color a" data-toggle="modal"
-                                    data-target="#exampleModal">
-                                    Comprar </button>
-                            </div>
+    <div class="container mb-2">
+        <div class="row">
+            <div class="card-group col-md-12 d-flex justify-content-left ml-2">
+                <div *ngFor="let item of listaProduto">
+                    <div *ngIf="item.categoria.descricao == 'roupas'" class="bottom">
+                        <img class="card-img-top grow" src="{{item.foto}}" height="200px" width="100px"
+                            alt="Card image cap">
+                        <div class="card-body border ">
+                            <h4 class="card-title">{{item.nome}}</h4>
+                            <p class="card-text">R$: {{item.preco}}</p>
+                            <button type="button" class="btn btn-color a" data-toggle="modal"
+                                data-target="#exampleModal">
+                                Comprar </button>
                         </div>
                     </div>
-                    <!-- </div> -->
                 </div>
             </div>
-
-            <div class="container mt-5">
-                <h5 class="ml-5"> <img src="https://i.imgur.com/8JHvwf5.png" height="38px" width="150px"> </h5>
-                <hr class="mb-4">
-                <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
-
-
-
-                    <div class="carousel-item active">
-
-                        <div class="row">
-                            <div class="card-group col-md-12 d-flex justify-content-left">
-                                <div *ngFor="let item of listaProduto">
-                                    <div *ngIf="item.categoria.descricao == 'Oculos'" class="bottom">
-
-                                        <img class="card-img-top grow" src="{{item.foto}}" height="200px" width="100px"
-                                            alt="Card image cap">
-                                        <div class="card-body border">
-                                            <h4 class="card-title">{{item.nome}}</h4>
-                                            <p class="card-text">R$: {{item.preco}}</p>
-                                            <!-- Button trigger modal -->
-                                            <!-- Button trigger modal -->
-                                            <button type="button" class="btn btn-color a" data-toggle="modal"
-                                                data-target="#exampleModal">
-                                                Comprar </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- </div> -->
-                            </div>
-                        </div>
-
-
-                        <div class="container mt-5">
-                            <h5 class="ml-5"> <img src="https://i.imgur.com/QAzENL2.png" height="38px" width="150px">
-                            </h5>
-                            <hr class="mb-5">
-                            <div id="multi-item-example" class="carousel slide carousel-multi-item"
-                                data-ride="carousel">
-
-
-                                <div class="carousel-item active">
-
-                                    <div class="row">
-                                        <div class="card-group col-md-12 d-flex justify-content-left">
-                                            <div *ngFor="let item of listaProduto" >
-                                                <div *ngIf="item.categoria.descricao == 'Beleza'" class="bottom">
-
-                                                    <img class="card-img-top grow" src="{{item.foto}}" height="200px"
-                                                        width="100px" alt="Card image cap">
-                                                    <div class="card-body border">
-                                                        <h4 class="card-title">{{item.nome}}</h4>
-                                                        <p class="card-text">R$: {{item.preco}}</p>
-                                                        <!-- Button trigger modal -->
-                                                        <!-- Button trigger modal -->
-                                                        <button type="button" class="btn btn-color a"
-                                                            data-toggle="modal" data-target="#exampleModal">
-                                                            Comprar </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- </div> -->
-                                        </div>
-                                    </div>
-
-
-
-
-
-
-
-
-                                    <hr class="mt-4">
-                                    <!-- /Cards Produtos -->
-
-                                    <!-- Sobre nos -->
-
-                                    <!-- Jumbotron -->
-                                    <div class="jumbotron bg-white d-flex justify-content-center p-5">
-
-                                        <div>
-                                            <h1 class="display-4 text-center">Sobre nós</h1>
-                                            <p class="lead m-auto text-center">Projeto Borboletas</p>
-                                        </div>
-
-                                    </div>
-                                    <!-- /Jumbotron -->
-
-                                    <div class="container">
-
-                                        <div class="row d-flex align-items-center">
-
-                                            <!-- COMO SURGIU O BORBOLETAS -->
-                                            <div class="col-md-6 img-sobrenos">
-                                                <h3 class="text-center">Como o Borboletas surgiu</h3>
-
-                                                <div class="mt-4">
-                                                    <p>
-                                                        Borboletas surgiu com o intuito de contribuir com a autonomia
-                                                        financeira
-                                                        de pessoas transgêneras,
-                                                        baseando-se na ODS10 - Redução da Desigualdade, o e-commerce
-                                                        visa ajudar
-                                                        através da divulgação de
-                                                        trabalhos e produtos.
-                                                    </p>
-
-                                                </div>
-                                            </div>
-
-                                            <div class="col-md-6">
-                                                <div class="d-flex justify-content-center">
-                                                    <img src="https://i.imgur.com/ipLlvEL.png" height="300px"
-                                                        width="300px" class="img-fluid" alt="">
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="row d-flex align-items-center">
-                                            <!-- NOSSA MISSÃO -->
-                                            <div class="col-md-6 img-sobrenos">
-                                                <div class="d-flex justify-content-center">
-                                                    <img src="https://i.imgur.com/Sl0PZpc.gif" height="300px"
-                                                        width="300px" class="img-fluid" alt="">
-                                                </div>
-                                            </div>
-
-                                            <div class="col-md-6">
-
-
-                                                <h3 class="text-center">Objetivo</h3>
-
-                                                <div class="mt-4">
-
-                                                    <p>
-                                                        O preconceito, a discriminação e a violência referente à
-                                                        identidade de
-                                                        gênero são observadas na vida da população transgênero em
-                                                        diversos
-                                                        aspectos e, inclusive, no ambiente educacional e no mercado de
-                                                        trabalho.
-                                                        Reconhecer as diferenças e ampará-las é fundamental para incluir
-                                                        os
-                                                        grupos de minorias que compõem nossa sociedade.
-
-                                                    </p>
-
-
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-
-
-                                    <!-- Jumbotron -->
-                                    <div class="jumbotron bg-white d-flex justify-content-center p-5">
-
-                                        <div>
-                                            <h1 class="display-4 text-center">Time de desenvolvimento</h1>
-                                            <p class="lead m-auto text-center">Usando a tecnologia para promover a
-                                                igualdade</p>
-                                        </div>
-
-                                    </div>
-                                    <!-- /Jumbotron -->
-
-
-
-                                    <!-- SOBRE O TIME DE DESENVOLVIMENTO -->
-                                    <div class="container">
-
-                                        <div class="row">
-                                            <!-- CARD 01 -->
-                                            <div class="col-md-2 shadow-drop-br card-time-devs p-3 ">
-
-                                                <div class="avatar mx-auto ">
-                                                    <img src="https://i.imgur.com/7mty7ml.jpg"
-                                                        class="img-fluid rounded-circle z-depth-1" alt="Sample avatar">
-                                                </div>
-
-                                                <h5 class="font-weight-bold mt-4 mb-3 text-center">Jaqueline Camilo Dias
-                                                </h5>
-
-                                                <ul class="list-unstyled mb-0 d-flex justify-content-center">
-
-                                                    <li>
-                                                        <!-- Github -->
-                                                        <a class="p-2 fa-lg ins-ic"
-                                                            href="https://github.com/jaque20050">
-                                                            <i class="fab fa-github blue-text"> </i>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <!-- LinkdIn -->
-                                                        <a class="p-2 fa-lg ins-ic"
-                                                            href="https://www.linkedin.com/in/jaqueline-camilo-games/">
-                                                            <i class="fab fa-linkedin"></i>
-                                                        </a>
-                                                    </li>
-
-                                                </ul>
-
-                                            </div>
-                                            <!-- CARD 01 -->
-
-                                            <!-- CARD 02 -->
-                                            <div class="col-md-2 shadow-drop-br p-3 ">
-
-                                                <div class="avatar mx-auto ">
-                                                    <img src="https://avatars.githubusercontent.com/u/86385275?v=4"
-                                                        class="img-fluid rounded-circle z-depth-1" alt="Sample avatar">
-                                                </div>
-
-                                                <h5 class="font-weight-bold mt-4 mb-3 text-center">Letícia Orozimbo</h5>
-
-                                                <ul class="list-unstyled mb-0 d-flex justify-content-center">
-
-                                                    <li>
-                                                        <!-- Github -->
-                                                        <a class="p-2 fa-lg ins-ic"
-                                                            href="https://github.com/LeticiaOrozimbo">
-                                                            <i class="fab fa-github blue-text"> </i>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <!-- LinkdIn -->
-                                                        <a class="p-2 fa-lg ins-ic"
-                                                            href="https://www.linkedin.com/in/leticiaorozimbo/">
-                                                            <i class="fab fa-linkedin"></i>
-                                                        </a>
-                                                    </li>
-
-                                                </ul>
-
-                                            </div>
-                                            <!-- CARD 02 -->
-
-                                            <!-- CARD 01 -->
-                                            <div class="col-md-2 shadow-drop-br p-3 ">
-
-                                                <div class="avatar mx-auto ">
-                                                    <img src="https://i.imgur.com/QdFwWqH.png"
-                                                        class="img-fluid rounded-circle z-depth-1" alt="Sample avatar">
-                                                </div>
-
-                                                <h5 class="font-weight-bold mt-4 mb-3 text-center">Lucas Lauro Vilela
-                                                </h5>
-
-                                                <ul class="list-unstyled mb-0 d-flex justify-content-center">
-
-                                                    <li>
-                                                        <!-- Github -->
-                                                        <a class="p-2 fa-lg ins-ic" href="https://github.com/llauros">
-                                                            <i class="fab fa-github blue-text"> </i>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <!-- LinkdIn -->
-                                                        <a class="p-2 fa-lg ins-ic"
-                                                            href="https://www.linkedin.com/in/lucas-l-3a576489/">
-                                                            <i class="fab fa-linkedin"></i>
-                                                        </a>
-                                                    </li>
-
-                                                </ul>
-
-                                            </div>
-                                            <!-- CARD 01 -->
-                                            <!-- CARD 01 -->
-                                            <div class="col-md-2 shadow-drop-br p-3 ">
-
-                                                <div class="avatar mx-auto ">
-                                                    <img src="https://avatars.githubusercontent.com/u/77411112?v=4"
-                                                        class="img-fluid rounded-circle z-depth-1" alt="Sample avatar">
-                                                </div>
-
-                                                <h5 class="font-weight-bold mt-4 mb-3 text-center">João Vitor Brandão
-                                                </h5>
-
-                                                <ul class="list-unstyled mb-0 d-flex justify-content-center">
-
-                                                    <li>
-                                                        <!-- Github -->
-                                                        <a class="p-2 fa-lg ins-ic "
-                                                            href="https://github.com/joaovitorbrandao7">
-                                                            <i class="fab fa-github blue-text"> </i>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <!-- LinkdIn -->
-                                                        <a class="p-2 fa-lg ins-ic"
-                                                            href="https://www.linkedin.com/in/joaovitorbrandao21/">
-                                                            <i class="fab fa-linkedin"></i>
-                                                        </a>
-                                                    </li>
-
-                                                </ul>
-
-                                            </div>
-                                            <!-- CARD 01 -->
-
-                                            <!-- CARD 01 -->
-                                            <div class="col-md-2 shadow-drop-br p-3 ">
-
-                                                <div class="avatar mx-auto ">
-                                                    <img src="https://avatars.githubusercontent.com/u/85979811?v=4"
-                                                        class="img-fluid rounded-circle z-depth-1" alt="Sample avatar">
-                                                </div>
-
-                                                <h5 class="font-weight-bold mt-4 mb-3 text-center">Barbara do Amaral
-                                                </h5>
-
-                                                <ul class="list-unstyled mb-0 d-flex justify-content-center">
-
-                                                    <li>
-                                                        <!-- Github -->
-                                                        <a class="p-2 fa-lg ins-ic"
-                                                            href="https://github.com/BabiAmaral">
-                                                            <i class="fab fa-github blue-text"> </i>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <!-- LinkdIn -->
-                                                        <a class="p-2 fa-lg ins-ic"
-                                                            href="https://www.linkedin.com/in/barbara-amaral-oliveira/">
-                                                            <i class="fab fa-linkedin"></i>
-                                                        </a>
-                                                    </li>
-
-                                                </ul>
-
-                                            </div>
-                                            <!-- CARD 01 -->
-
-                                            <!-- CARD 02 -->
-                                            <div class="col-md-2 shadow-drop-br p-3 ">
-
-                                                <div class="avatar mx-auto ">
-                                                    <img src="https://i.imgur.com/AE2bA8n.jpg"
-                                                        class="img-fluid rounded-circle z-depth-1" alt="Sample avatar">
-                                                </div>
-
-                                                <h5 class="font-weight-bold mt-4 mb-3 text-center">Yehokhanan Lima</h5>
-
-                                                <ul class="list-unstyled mb-0 d-flex justify-content-center">
-
-                                                    <li>
-                                                        <!-- Github -->
-                                                        <a class="p-2 fa-lg ins-ic"
-                                                            href="https://github.com/Yehokhananlima">
-                                                            <i class="fab fa-github blue-text"> </i>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <!-- LinkdIn -->
-                                                        <a class="p-2 fa-lg ins-ic"
-                                                            href="https://www.linkedin.com/in/yehokhanan-lima/">
-                                                            <i class="fab fa-linkedin"></i>
-                                                        </a>
-                                                    </li>
-
-                                                </ul>
-
-                                            </div>
-                                            <!-- CARD 01 -->
-
-                                        </div>
-                                    </div>
-                                    <!-- SOBRE O TIME DE DESENVOLVIMENTO -->
-
-                                    <!-- Modal -->
-                                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
-                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                                    <button type="button" class="close" data-dismiss="modal"
-                                                        aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    ...
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary"
-                                                        data-dismiss="modal">Close</button>
-                                                    <button type="button" class="btn btn-primary">Save changes</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <app-rodape></app-rodape>
+        </div>
+    </div>
+    <!---------segundo Cards Oculos----->
+    <div class="container mt-5">
+        <h5 class="ml-5"> <img src="https://i.imgur.com/8JHvwf5.png" height="38px" width="150px"> </h5>
+        <hr class="mb-4">
+    </div>
+    <div class="row mb-2">
+        <div class="card-group col-md-12 d-flex justify-content-left">
+            <div *ngFor="let item of listaProduto">
+                <div *ngIf="item.categoria.descricao == 'Oculos'" class="bottom">
+                    <img class="card-img-top grow" src="{{item.foto}}" height="200px" width="100px"
+                        alt="Card image cap">
+                    <div class="card-body border">
+                        <h4 class="card-title">{{item.nome}}</h4>
+                        <p class="card-text">R$: {{item.preco}}</p>
+                        <!-- Button trigger modal -->
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-color a" data-toggle="modal" data-target="#exampleModal">
+                            Comprar </button>
+                    </div>
+                </div>
+            </div>
+            <!-- </div> -->
+        </div>
+    </div>
+    <!-------Terceiro Cards Beleza--------->
+    <div class="container mt-5">
+        <h5 class="ml-5"> <img src="https://i.imgur.com/QAzENL2.png" height="38px" width="150px">
+        </h5>
+        <hr class="mb-5">
+    </div>
+    <div class="row mb-2">
+        <div class="card-group col-md-12 d-flex justify-content-left">
+            <div *ngFor="let item of listaProduto">
+                <div *ngIf="item.categoria.descricao == 'Beleza'" class="bottom">
+                    <img class="card-img-top grow" src="{{item.foto}}" height="200px" width="100px"
+                        alt="Card image cap">
+                    <div class="card-body border">
+                        <h4 class="card-title">{{item.nome}}</h4>
+                        <p class="card-text">R$: {{item.preco}}</p>
+                        <button type="button" class="btn btn-color a" data-toggle="modal" data-target="#exampleModal">
+                            Comprar </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr class="mt-4">
+<!-- /Cards Produtos -->
+<!-- Sobre nos -->
+<!-- Jumbotron -->
+<div class="jumbotron bg-white d-flex justify-content-center p-5">
+    <div>
+        <h1 class="display-4 text-center">Sobre nós</h1>
+        <p class="lead m-auto text-center">Projeto Borboletas</p>
+    </div>
+</div>
+<!-- /Jumbotron -->
+<div class="container">
+    <div class="row d-flex align-items-center">
+        <!-- COMO SURGIU O BORBOLETAS -->
+        <div class="col-md-6 img-sobrenos">
+            <h3 class="text-center">Como o Borboletas surgiu</h3>
+            <div class="mt-4">
+                <p>
+                    Borboletas surgiu com o intuito de contribuir com a autonomia
+                    financeira
+                    de pessoas transgêneras,
+                    baseando-se na ODS10 - Redução da Desigualdade, o e-commerce
+                    visa ajudar
+                    através da divulgação de
+                    trabalhos e produtos.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="d-flex justify-content-center">
+                <img src="https://i.imgur.com/ipLlvEL.png" height="300px" width="300px" class="img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="row d-flex align-items-center">
+        <!-- NOSSA MISSÃO -->
+        <div class="col-md-6 img-sobrenos">
+            <div class="d-flex justify-content-center">
+                <img src="https://i.imgur.com/Sl0PZpc.gif" height="300px" width="300px" class="img-fluid" alt="">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h3 class="text-center">Objetivo</h3>
+            <div class="mt-4">
+                <p>
+                    O preconceito, a discriminação e a violência referente à
+                    identidade de
+                    gênero são observadas na vida da população transgênero em
+                    diversos
+                    aspectos e, inclusive, no ambiente educacional e no mercado de
+                    trabalho.
+                    Reconhecer as diferenças e ampará-las é fundamental para incluir
+                    os
+                    grupos de minorias que compõem nossa sociedade.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Jumbotron -->
+<div class="jumbotron bg-white d-flex justify-content-center p-5">
+    <div>
+        <h1 class="display-4 text-center">Time de desenvolvimento</h1>
+        <p class="lead m-auto text-center">Usando a tecnologia para promover a
+            igualdade</p>
+    </div>
+</div>
+<!-- /Jumbotron -->
+<!-- SOBRE O TIME DE DESENVOLVIMENTO -->
+<div class="container mb-2">
+    <div class="row">
+        <!-- CARD 01 -->
+        <div class="col-md-2 shadow-drop-br card-time-devs p-3 ">
+            <div class="avatar mx-auto ">
+                <img src="https://i.imgur.com/7mty7ml.jpg" class="img-fluid rounded-circle z-depth-1"
+                    alt="Sample avatar">
+            </div>
+            <h5 class="font-weight-bold mt-4 mb-3 text-center">Jaqueline Camilo Dias
+            </h5>
+            <ul class="list-unstyled mb-0 d-flex justify-content-center">
+                <li>
+                    <!-- Github -->
+                    <a class="p-2 fa-lg ins-ic" href="https://github.com/jaque20050">
+                        <i class="fab fa-github blue-text"> </i>
+                    </a>
+                </li>
+                <li>
+                    <!-- LinkdIn -->
+                    <a class="p-2 fa-lg ins-ic" href="https://www.linkedin.com/in/jaqueline-camilo-games/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- CARD 01 -->
+        <!-- CARD 02 -->
+        <div class="col-md-2 shadow-drop-br p-3 ">
+            <div class="avatar mx-auto ">
+                <img src="https://avatars.githubusercontent.com/u/86385275?v=4"
+                    class="img-fluid rounded-circle z-depth-1" alt="Sample avatar">
+            </div>
+            <h5 class="font-weight-bold mt-4 mb-3 text-center">Letícia Orozimbo</h5>
+            <ul class="list-unstyled mb-0 d-flex justify-content-center">
+                <li>
+                    <!-- Github -->
+                    <a class="p-2 fa-lg ins-ic" href="https://github.com/LeticiaOrozimbo">
+                        <i class="fab fa-github blue-text"> </i>
+                    </a>
+                </li>
+                <li>
+                    <!-- LinkdIn -->
+                    <a class="p-2 fa-lg ins-ic" href="https://www.linkedin.com/in/leticiaorozimbo/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- CARD 02 -->
+        <!-- CARD 01 -->
+        <div class="col-md-2 shadow-drop-br p-3 ">
+            <div class="avatar mx-auto ">
+                <img src="https://i.imgur.com/QdFwWqH.png" class="img-fluid rounded-circle z-depth-1"
+                    alt="Sample avatar">
+            </div>
+            <h5 class="font-weight-bold mt-4 mb-3 text-center">Lucas Lauro Vilela
+            </h5>
+            <ul class="list-unstyled mb-0 d-flex justify-content-center">
+                <li>
+                    <!-- Github -->
+                    <a class="p-2 fa-lg ins-ic" href="https://github.com/llauros">
+                        <i class="fab fa-github blue-text"> </i>
+                    </a>
+                </li>
+                <li>
+                    <!-- LinkdIn -->
+                    <a class="p-2 fa-lg ins-ic" href="https://www.linkedin.com/in/lucas-l-3a576489/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- CARD 01 -->
+        <!-- CARD 01 -->
+        <div class="col-md-2 shadow-drop-br p-3 ">
+            <div class="avatar mx-auto ">
+                <img src="https://avatars.githubusercontent.com/u/77411112?v=4"
+                    class="img-fluid rounded-circle z-depth-1" alt="Sample avatar">
+            </div>
+            <h5 class="font-weight-bold mt-4 mb-3 text-center">João Vitor Brandão
+            </h5>
+            <ul class="list-unstyled mb-0 d-flex justify-content-center">
+                <li>
+                    <!-- Github -->
+                    <a class="p-2 fa-lg ins-ic " href="https://github.com/joaovitorbrandao7">
+                        <i class="fab fa-github blue-text"> </i>
+                    </a>
+                </li>
+                <li>
+                    <!-- LinkdIn -->
+                    <a class="p-2 fa-lg ins-ic" href="https://www.linkedin.com/in/joaovitorbrandao21/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- CARD 01 -->
+        <!-- CARD 01 -->
+        <div class="col-md-2 shadow-drop-br p-3 ">
+            <div class="avatar mx-auto ">
+                <img src="https://avatars.githubusercontent.com/u/85979811?v=4"
+                    class="img-fluid rounded-circle z-depth-1" alt="Sample avatar">
+            </div>
+            <h5 class="font-weight-bold mt-4 mb-3 text-center">Barbara do Amaral
+            </h5>
+            <ul class="list-unstyled mb-0 d-flex justify-content-center">
+                <li>
+                    <!-- Github -->
+                    <a class="p-2 fa-lg ins-ic" href="https://github.com/BabiAmaral">
+                        <i class="fab fa-github blue-text"> </i>
+                    </a>
+                </li>
+                <li>
+                    <!-- LinkdIn -->
+                    <a class="p-2 fa-lg ins-ic" href="https://www.linkedin.com/in/barbara-amaral-oliveira/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- CARD 01 -->
+        <!-- CARD 02 -->
+        <div class="col-md-2 shadow-drop-br p-3 ">
+            <div class="avatar mx-auto ">
+                <img src="https://i.imgur.com/AE2bA8n.jpg" class="img-fluid rounded-circle z-depth-1"
+                    alt="Sample avatar">
+            </div>
+            <h5 class="font-weight-bold mt-4 mb-3 text-center">Yehokhanan Lima</h5>
+            <ul class="list-unstyled mb-0 d-flex justify-content-center">
+                <li>
+                    <!-- Github -->
+                    <a class="p-2 fa-lg ins-ic" href="https://github.com/Yehokhananlima">
+                        <i class="fab fa-github blue-text"> </i>
+                    </a>
+                </li>
+                <li>
+                    <!-- LinkdIn -->
+                    <a class="p-2 fa-lg ins-ic" href="https://www.linkedin.com/in/yehokhanan-lima/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- CARD 01 -->
+    </div>
+</div>
+<app-rodape></app-rodape>
