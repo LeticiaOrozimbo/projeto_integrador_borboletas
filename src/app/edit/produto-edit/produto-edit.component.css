@@ -1,0 +1,15 @@
+.tambtn {
+    width: 100%;
+  }
+  
+  .button{
+    border-radius: 20px 20px 20px 20px;
+    background-color: #7756b8;
+    color: white;
+    font-weight: bold;
+    font-family: 'Poppins';    
+    }
+  .button:hover{
+    background-color: white;
+    color: #7756b8;
+  }
