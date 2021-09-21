@@ -3,7 +3,12 @@
     color: white;
     font-family: Poppins;
 }
-
+.color{
+    color: #7756b8;
+}
 h1{
     font-weight: bold;
+}
+.border{
+    border-right: 5px solid #7756b8;
 }

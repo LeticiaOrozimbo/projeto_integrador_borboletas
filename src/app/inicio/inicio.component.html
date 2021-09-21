@@ -1,4 +1,122 @@
-
+<app-menu></app-menu>
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner carrocel-inicio barra">
+        <div class="carousel-item active">
+            <!-- Titulo Princípal = O PROJETO ! -->
+            <div class="container z-depth-1 ">
+                <div class="row">
+                    <div class="col-md-8 d-flex justify-content-center">
+                        <header>
+                            <h1 class=" text home-nome-projeto">Borboletas</h1>
+                        </header>
+                        <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap"
+                            rel="stylesheet">
+                    </div>
+                    <div class="col-md-4 home-header-img">
+                    </div>
+                </div>
+            </div>
+            <!-- /Titulo Princípal = O PROJETO ! -->
+        </div>
+        <div class="carousel-item">
+            <!-- CAROUSEL ITEM 03 = EMPREENDA AGORA ! -->
+            <div class="container z-depth-1">
+                <div class="row">
+                    <div class="col-md-5 mb-4 mb-md-0 mt-5">
+                        <div class="view">
+                            <img src="https://i.imgur.com/zWFqwuT.png" height="250px" width="250px"
+                                class="img-fluid rounded mx-auto d-block" alt="smaple image">
+                        </div>
+                    </div>
+                    <div class="col-md-7 mb-lg-0 mb-4 d-flex align-items-center">
+                        <div class="">
+                            <!-- Section heading -->
+                            <h3 class="font-weight-bold my-3">Já não está na hora de começar seu próprio negocio?
+                            </h3>
+                            <p class="mb-4 pb-2 text">Os nossos grandes erros não envolvem o medo da
+                                transformação, mas a
+                                paralisação que aceitamos viver para não sofrer o dano. Tire o tempo necessário para
+                                realizar esse
+                                processo de metamorfose e empreenda novos tempos na sua vida!
+                            </p>
+                            <small class="form-text black-text carousel-item01-text">
+                                <strong>
+                                    <a class="semi" href="#">
+                                        Que tal começar pelo seu cadastro?
+                                    </a>
+                                </strong>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /CAROUSEL ITEM = EMPREENDA AGORA ! -->
+        </div>
+        <div class="carousel-item">
+            <!-- CAROUSEL ITEM = MUSICA ! -->
+            <div class="container my-5 z-depth-1">
+                <!--Section: Content-->
+                <section class="dark-grey-text">
+                    <div class="row pr-lg-5">
+                        <div class="col-md-7 mb-4">
+                            <div class="view">
+                                <img src="https://i.imgur.com/XQffDuP.png" height="250px" width="250px"
+                                    class="img-fluid rounded mx-auto d-block" alt="smaple image">
+                            </div>
+                        </div>
+                        <div class="col-md-5 d-flex align-items-center">
+                            <div>
+                                <h3 class="font-weight-bold mb-4 semi">Também ama música?</h3>
+                                <p>Então já passou da hora de aprender a tocar alguns instrumento! Encontre ótimos
+                                    professores aqui
+                                    no borboletas!</p>
+                                <p>Você, pessoa trans, ama de paixão tocar? Que tal ensinar outras pessoas? Não perca
+                                    tempo e
+                                    empreenda já!</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--Section: Content-->
+            </div>
+            <!--/ CAROUSEL ITEM = MUSICA ! -->
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <i class="fas fa-caret-left"></i>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <i class="fas fa-caret-right"></i>
+    </a>
+</div>
+<!--/CARROSEL -->
+<!-- Jumbotron -->
+<div class="jumbotron bg-white d-flex justify-content-center p-5">
+    <div>
+        <h1 class="display-4 focus-in-contract-bck">Conheça os produtos</h1>
+    </div>
+</div>
+<div class="container">
+    <!-----Primeiro Cards Roupas----->
+    <h5 class="ml-5"> <img src="https://i.imgur.com/vCDGKEZ.png" height="40px" width="150px"> </h5>
+    <hr class="mb-4">
+    <div class="container mb-2">
+        <div class="row">
+            <div class="card-group col-md-12 d-flex justify-content-left ml-2">
+                <div *ngFor="let item of listaProduto">
+                    <div *ngIf="item.categoria.descricao == 'roupas'" class="bottom">
+                        <img class="card-img-top grow" src="{{item.foto}}" height="200px" width="100px"
+                            alt="Card image cap">
+                        <div class="card-body border ">
+                            <h4 class="card-title">{{item.nome}}</h4>
+                            <p class="card-text">R$: {{item.preco}}</p>
+                            <button type="button" class="btn btn-color a" data-toggle="modal"
+                                data-target="#exampleModal" [routerLink]="['/comprar', item.id]">
+                                Comprar </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!---------segundo Cards Oculos----->
@@ -17,7 +135,7 @@
                         <p class="card-text">R$: {{item.preco}}</p>
                         <!-- Button trigger modal -->
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-color a" data-toggle="modal" data-target="#exampleModal">
+                        <button type="button" class="btn btn-color a" data-toggle="modal" data-target="#exampleModal"  [routerLink]="['/comprar', item.id]">
                             Comprar </button>
                     </div>
                 </div>
@@ -40,7 +158,7 @@
                     <div class="card-body border">
                         <h4 class="card-title">{{item.nome}}</h4>
                         <p class="card-text">R$: {{item.preco}}</p>
-                        <button type="button" class="btn btn-color a" data-toggle="modal" data-target="#exampleModal">
+                        <button type="button" class="btn btn-color a" [routerLink]="['/comprar', item.id]">
                             Comprar </button>
                     </div>
                 </div>
