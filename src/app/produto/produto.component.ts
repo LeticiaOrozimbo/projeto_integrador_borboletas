@@ -17,7 +17,7 @@ export class ProdutoComponent implements OnInit {
 
   produto: Produto = new Produto()
   listaProduto: Produto[]
-  
+
 
   nomeProduto: string
   // descricaoProduto: string
@@ -27,13 +27,13 @@ export class ProdutoComponent implements OnInit {
   descricaoProduto: string
 
   idCategoria: number
-  
+
   categoria: Categoria = new Categoria()
   listaCategoria: Categoria[]
   nomeCategoria: string
 
   usuario: Usuario = new Usuario()
-  idUsuario:number;
+  idUsuario: number;
 
   key = 'data'
   reverse = true
@@ -62,13 +62,17 @@ export class ProdutoComponent implements OnInit {
    */
   buscarTodosProdutos() {
     this.produtoService.buscarTodosProdutos().subscribe((resp: Produto[]) => {
+      
+      // for (let produto in resp) {
+      // }
+      
       this.listaProduto = resp
     })
   }
 
   bucarPorId() {
     if (this.nomeProduto == '') {
-   
+
     } else {
       this.produtoService.buscarPorNome(this.nomeProduto).subscribe((resp: Produto[]) => {
         this.listaProduto = resp
@@ -85,10 +89,10 @@ export class ProdutoComponent implements OnInit {
     })
   }
 
-  findByIdCategoria(){
-    this.categoriaService.getByIdCategoria(this.idCategoria).subscribe((resp: Categoria) =>{
+  findByIdCategoria() {
+    this.categoriaService.getByIdCategoria(this.idCategoria).subscribe((resp: Categoria) => {
       this.categoria = resp
-      console.log("tema por id"+ JSON.stringify(this.categoria))
+      console.log("tema por id" + JSON.stringify(this.categoria))
     })
   }
 
@@ -99,8 +103,8 @@ export class ProdutoComponent implements OnInit {
     this.usuario.id = this.idUsuario;
     this.produto.criador = this.usuario
 
-console.log("this.idCategoria "+this.idCategoria)
-    console.log("produto "+JSON.stringify(this.produto))
+    console.log("this.idCategoria " + this.idCategoria)
+    console.log("produto " + JSON.stringify(this.produto))
     this.produtoService.criandoProduto(this.produto).subscribe((resp: Produto) => {
       this.produto = resp
       alert('produto atualizada com sucesso!')

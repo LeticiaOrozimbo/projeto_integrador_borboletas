@@ -34,7 +34,7 @@ export class EntrarComponent implements OnInit {
   
       this.usuarioDTO.foto
       console.log("token "+environment.token)
-      alert('Logado com sucesso!')
+      //alert('Logado com sucesso!')
       this.router.navigate(['/inicio'])
     }, erro =>{
       if(erro.status == 500){

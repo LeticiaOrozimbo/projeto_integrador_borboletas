@@ -33,7 +33,7 @@
 </div>
 
 
-
+<!-- Lista Produto -->
 <div class="container">
 
     <div class="row mt-5">
@@ -42,44 +42,56 @@
         </div>
     </div>
 
-    <div class="row mt-3 mb-5 d-flex justify-content-center">
-        <div class="col-md-6">
+    <div class="row mt-3 mb-5 d-flex justify-content-start">
+        <div class="col-md-12">
+            <div class="container mb-2">
+                <div class="row">
 
-            <table class="table table-hover">
-                <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Nome</th>
-                        <th scope="col">Preço</th>
-                        <th scope="col">Quantidade</th>
-                        <th scope="col" class="text-right">Modificações</th>
+                    <!-- CARD PRODUTO USUARIO -->
+                    <div class="card-group col-md-12 d-flex justify-content-left ml-2">
+                        
+                        <div *ngFor="let item of listaProduto" class="bottom mr-3 mb-3" width="500px">
 
-                    </tr>
-                </thead>
 
-                <tbody>
-                    <tr *ngFor='let item of listaProduto'>
+                            <div *ngIf="item.criador.id == idUsuario" class="d-flex justify-content-center">
 
-                        <th>{{item.id}}</th>
-                        <td>{{item.nome}}</td>
-                        <td>{{item.preco}}</td>
-                        <td>{{item.quantidade}}</td>
+                                <div class="img-prod">
+                                    <img class="card-img-top grow" src="{{item.foto}}" height="200px" width="200px"
+                                        alt="Card image cap">
+                                </div>
 
-                        <td class="d-flex justify-content-end">
-                            <button class="btn button mr-3" [routerLink]="['/produto-edit', item.id]">Editar</button>
-                            <button class="btn button" [routerLink]="['/produto-delete', item.id]">Apagar</button>
-                        </td>
-                    </tr>
+                                <div class="card-body border text-center">
 
-                </tbody>
-            </table>
+                                    <div class="">
+                                        <h3 class="card-title">{{item.nome}}</h3>
+                                        <h5 class="card-text">R$: {{item.preco}}</h5>
+                                        <p class="text-secondary">Seu estoque: {{item.quantidade}}</p>
+                                    </div>
+
+                                    <div class="d-flex justify-content-center">
+
+                                        <button class="btn button mr-3 button-produtos"
+                                            [routerLink]="['/produto-edit', item.id]">Editar</button>
+                                        <button class="btn button button-produtos"
+                                            [routerLink]="['/produto-delete', item.id]">Apagar</button>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- CARD PRODUTO USUARIO -->
+                </div>
+            </div>
 
         </div>
     </div>
 
 </div>
-
-
+<!-- Lista Produto -->
 
 
 <div class="modal fade" id="novaPostagem" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
@@ -120,9 +132,7 @@
 
                 <div class="form-group">
                     <textarea [(ngModel)]='produto.descricao' type="text" class="form-control mb-1" id="descricao"
-                        placeholder="Insira uma descrição" rows="5" cols="80">
-
-                    <!--</textarea>-->
+                        placeholder="Insira uma descrição" rows="5" cols="80"></textarea>
                 </div>
 
                 <div class="form-group">

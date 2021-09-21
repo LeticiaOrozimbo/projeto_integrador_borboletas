@@ -1,24 +1,33 @@
-.barra{
-    background: rgb(198,22,147);
-    background: linear-gradient(90deg, #BA68C8 37%, rgba(0,173,249,1) 77%, rgba(0,170,249,1) 100%);
+* {
+    box-sizing: border-box;
 }
 
-.fs-54{
-   font-size: 70px;
+.barra {
+    background: rgb(198, 22, 147);
+    background: linear-gradient(90deg, #BA68C8 37%, rgba(0, 173, 249, 1) 77%, rgba(0, 170, 249, 1) 100%);
 }
 
-.button{
+.fs-54 {
+    font-size: 70px;
+}
+
+.button {
     border-radius: 20px 20px 20px 20px;
     background-color: white;
     color: #7756b8;
     font-weight: bold;
-    font-family: 'Poppins';    
-    }
-.button:hover{
+    font-family: 'Poppins';
+}
+
+.button-produtos {
+    width: 100px;
+    height: 40px;
+}
+
+.button:hover {
     background-color: #7756b8;
     color: white;
 }
-
 
 input {
     padding: 10px;
@@ -29,7 +38,6 @@ input {
     box-shadow: 1px 1px 1px #999;
 }
 
-
 textarea {
     padding: 10px;
     max-width: 100%;
@@ -37,4 +45,14 @@ textarea {
     border-radius: 5px;
     border: 1px solid #ccc;
     box-shadow: 1px 1px 1px #999;
+}
+
+/* CARD PRODUTOS */
+.bottom {
+    border-bottom: 5px solid #7756b8;
+}
+
+.img-prod {
+    max-width: 200px;
+    width: 200px;
 }
