@@ -19,6 +19,7 @@ import { ProdutoDeleteComponent } from './delete/produto-delete/produto-delete.c
 import { ProdutoEditComponent } from './edit/produto-edit/produto-edit.component';
 import { TesteInicioComponent } from './teste-inicio/teste-inicio.component';
 import { ComprarComponent } from './comprar/comprar.component';
+import { TodosProdutosComponent } from './todos-produtos/todos-produtos.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { ComprarComponent } from './comprar/comprar.component';
     ProdutoDeleteComponent,
     ProdutoEditComponent,
     TesteInicioComponent,
-    ComprarComponent
+    ComprarComponent,
+    TodosProdutosComponent
     ],
   imports: [
     BrowserModule,

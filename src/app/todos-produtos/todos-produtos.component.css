@@ -1,0 +1,85 @@
+.jumbotron-titulo {
+    
+}
+.jumbotron-cor-fundo {
+    background: rgb(198, 22, 147);
+    background: linear-gradient(90deg, #BA68C8 37%, rgba(0, 173, 249, 1) 77%, rgba(0, 170, 249, 1) 100%);
+}
+
+.jumbotron-input {
+    border-radius: 15px;
+    padding-left: 20px;
+    height: 40px;
+
+    /* background-color: var(--search-box-bg, white);
+    border: none;
+    border-radius: calc(0.5 * var(--ntp-realbox-height));
+    color: var(--search-box-text);
+    font-family: inherit;
+    font-size: inherit;
+    height: 100%;
+    outline: none;
+    padding-inline-end: 44px;
+    padding-inline-start: 52px;
+    position: relative;
+    width: 100%; */
+}
+
+.jumbotron-input-span {
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.jumbotron-largura {
+    width: 100%;
+}
+
+.jb-titulo {
+    margin-bottom: 20px;
+}
+
+
+/* Categorias CARDS */
+.categorias-link {
+    text-decoration: none;
+    color: black;
+}
+
+.card-altura {
+    height: 20px;
+}
+
+.tamanho-linha {
+    background-color: #BA68C8;
+    height: 100px;
+}
+
+.teste {
+    padding: 0px 0px 0px 0px;
+}
+
+.corpo-card {
+    padding: 0px 0px 0px 0px;
+    /* padding-top: 0px;
+    padding-bottom: 0px; */
+
+}
+
+/* PRODUTOS CARDS */
+
+.card-produto-corpo {
+    margin: 5px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.card-borboletas-projeto-link {
+    text-decoration: none;
+    color: black;
+}
+
+.card-borboletas-projeto-img {
+    background-image: url(https://i.imgur.com/qy1QVIx.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
