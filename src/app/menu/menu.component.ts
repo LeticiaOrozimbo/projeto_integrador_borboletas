@@ -16,7 +16,7 @@ export class MenuComponent implements OnInit {
   usuarioDTO: UsuarioDTO = new UsuarioDTO()
 
   constructor(
-    private auth: AuthService,
+    public auth: AuthService,
     private router: Router
   ) { }
 
@@ -25,6 +25,8 @@ export class MenuComponent implements OnInit {
     window.scroll(0, 0)
 
     console.log(this.foto)
+
+  
 
     // TESTE PARA FOTO (EXCLUIR) 
     // environment.foto = this.usuarioDTO.foto
