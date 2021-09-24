@@ -1,6 +1,5 @@
-.jumbotron-titulo {
-    
-}
+.jumbotron-titulo {}
+
 .jumbotron-cor-fundo {
     background: rgb(198, 22, 147);
     background: linear-gradient(90deg, #BA68C8 37%, rgba(0, 173, 249, 1) 77%, rgba(0, 170, 249, 1) 100%);
@@ -10,7 +9,6 @@
     border-radius: 15px;
     padding-left: 20px;
     height: 40px;
-
     /* background-color: var(--search-box-bg, white);
     border: none;
     border-radius: calc(0.5 * var(--ntp-realbox-height));
@@ -38,8 +36,8 @@
     margin-bottom: 20px;
 }
 
-
 /* Categorias CARDS */
+
 .categorias-link {
     text-decoration: none;
     color: black;
@@ -62,7 +60,6 @@
     padding: 0px 0px 0px 0px;
     /* padding-top: 0px;
     padding-bottom: 0px; */
-
 }
 
 /* PRODUTOS CARDS */
@@ -87,6 +84,7 @@
 /* LIST PRODUTOS */
 
 /*  Helper Styles */
+
 .cards-list {
     font-family: Varela Round;
     background: #f1f1f1;
@@ -101,11 +99,6 @@ a {
 .card-sl {
     border-radius: 8px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    
-}
-.card-list-margin {
-    margin-bottom: 23px;
-
 }
 
 .card-image img {
@@ -156,15 +149,15 @@ a {
     background-color: #1F487E;
     color: #fff;
     border-radius: 0 0 8px 8px;
+    transition: 1s;
 }
 
 .card-button:hover {
     text-decoration: none;
-    background-color: #1D3461;
-    color: #fff;
-
+    background-color: #fff;
+    color: #7756b8;
+    border: 1px solid  #7756b8;
 }
-
 
 @-webkit-keyframes pulse {
     0% {
@@ -173,7 +166,6 @@ a {
         -webkit-transform: scale(0.9);
         transform: scale(0.9);
     }
-
     70% {
         -moz-transform: scale(1);
         -ms-transform: scale(1);
@@ -181,7 +173,6 @@ a {
         transform: scale(1);
         box-shadow: 0 0 0 50px rgba(90, 153, 212, 0);
     }
-
     100% {
         -moz-transform: scale(0.9);
         -ms-transform: scale(0.9);
@@ -191,7 +182,6 @@ a {
     }
 }
 
-
 .testando {
     max-width: 100%;
     max-height: 100%;
@@ -200,16 +190,57 @@ a {
 .tamanhdo-imagem {
     display: flex;
     justify-content: center;
-    height:200px;
-    /* width: */
+    height: 200px;
     max-width: 100%;
     max-height: 100%;
 }
 
-.tamanhdo-do-card {
+.tamanhdo-descricao {
+    height: 32px;
+    max-height: 32%;
+}
 
-    /* height:350px; */
-    /* width: */
+.tamanhdo-do-card {
     max-width: 95%;
     max-height: 70%;
+}
+
+.largura-col {
+    margin: 0px;
+    width: 230px;
+    padding-left: 1px;
+    padding-right: 1px;
+    /* height: 70%; */
+}
+
+.card-list-margin {
+    margin-bottom: 23px;
+}
+
+.cards-list {
+    padding: auto;
+}
+
+.card-cabeca {
+    padding-bottom: 0px;
+}
+
+.animacao-card {
+    /*
+      All of the base styles have
+      moved to the “CSS” tab above.
+    */
+    transition: transform 250ms;
+}
+
+.animacao-card:hover {
+    transform: translateY(-10px);
+}
+
+.card-btn-color {
+    background-color: #7756b8;
+}
+
+.card-font {
+    font-weight: bold;
 }

@@ -1,6 +1,6 @@
 <app-menu></app-menu>
 
-<div class="container-fluid">
+<div class="">
 
     <!-- JUMBOTRON -->
     <div class="jumbotron jumbotron-fluid jumbotron-cor-fundo">
@@ -44,6 +44,50 @@
     <!-- /JUMBOTRON -->
 
 </div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h3>As melhores ofertas</h3>
+        </div>
+    </div>
+</div>
+
+<!-- LISTA DE TODOS OS PRODUTOS -->
+
+<div class="container-fluid tamanho-container" style="margin-top:50px;">
+    <div class="row d-flex justify-content-center">
+
+        <div *ngFor="let item of listaProduto" class="col-md-3 largura-col">
+            <!-- <div class="col-md-3  "> -->
+
+                <div class="card-sl card-list-margin tamanhdo-do-card animacao-card">
+                    <div class="card-image tamanhdo-imagem">
+                        <img class="img-fluid testando"
+                            src="{{item.foto}}" />
+                    </div>
+
+                    <a class="card-action" href="#"><i class="fa fa-heart"></i></a>
+                    <div class="card-heading card-cabeca">
+                        <h5 class="card-title">{{item.nome}}</h5>
+                    </div>
+                    <div class="card-text tamanhdo-descricao ">
+                        {{item.descricao}}
+                    </div>
+                    <div class="card-text">
+                        R$: {{item.preco}}
+                    </div>
+                    <a [routerLink]="['/comprar', item.id]" class="card-button card-font card-btn-color"> Comprar</a>
+                </div>
+
+            <!-- </div> -->
+        </div>
+
+
+    </div>
+</div>
+
 
 
 <div class="container">
@@ -178,33 +222,6 @@
 
 </div>
 <br>
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <h4>As melhores ofertas</h4>
-        </div>
-    </div>
-
-    <div class="row mt-3">
-        <div class="card-group col-md-12 d-flex justify-content-center">
-            <div *ngFor="let item of listaProduto">
-                <div class="bottom card-produto-corpo">
-                    <img class="card-img-top grow" src="{{item.foto}}" height="200px" width="100px"
-                        alt="Card image cap">
-                    <div class="card-body border">
-                        <h4 class="card-title">{{item.nome}}</h4>
-                        <p class="card-text">R$: {{item.preco}}</p>
-                        <button type="button" class="btn btn-color a" [routerLink]="['/comprar', item.id]">
-                            Comprar </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-</div>
 
 <!-- <div class="container">
     <div class="row mt-4">
@@ -248,75 +265,3 @@
     </div>
 
 </div> -->
-
-<br>
-<br>
-<br><br><br><br><br>
-
-<div class="row">
-    <div class="col-md-12">
-        <h4>As melhores ofertas</h4>
-    </div>
-</div>
-<div class="container">
-
-
-    <div class="row mt-3">
-        <div class="card-group col-md-12 d-flex justify-content-center">
-
-
-            <div *ngFor="let item of listaProduto">
-                <div class="bottom card-produto-corpo">
-                    <img class="card-img-top grow" src="{{item.foto}}" height="200px" width="100px"
-                        alt="Card image cap">
-                    <div class="card-body border">
-                        <h4 class="card-title">{{item.nome}}</h4>
-                        <p class="card-text">R$: {{item.preco}}</p>
-                        <button type="button" class="btn btn-color a" [routerLink]="['/comprar', item.id]">
-                            Comprar </button>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-
-
-
-</div>
-
-
-
-
-<div class="container cards-list" style="margin-top:50px;">
-    <div class="row ">
-
-        <div *ngFor="let item of listaProduto" class="col-md-3">
-            <!-- <div class="col-md-3  "> -->
-
-                <div class="card-sl card-list-margin tamanhdo-do-card">
-                    <div class="card-image tamanhdo-imagem">
-                        <img class="img-fluid testando"
-                            src="{{item.foto}}" />
-                    </div>
-
-                    <a class="card-action" href="#"><i class="fa fa-heart"></i></a>
-                    <div class="card-heading">
-                        <h5 class="card-title">{{item.nome}}</h5>
-                    </div>
-                    <div class="card-text">
-                        {{item.descricao}}
-                    </div>
-                    <div class="card-text">
-                        {{item.preco}}
-                    </div>
-                    <a href="#" class="card-button"> Purchase</a>
-                </div>
-
-            <!-- </div> -->
-        </div>
-
-
-    </div>
-</div>
