@@ -244,3 +244,14 @@ a {
 .card-font {
     font-weight: bold;
 }
+
+/* CORPO JUMBOTRON */
+.corpo-jumbotron {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+    max-height: 10px;
+    background-color: #fff;
+}
+

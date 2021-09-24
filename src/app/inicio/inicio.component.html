@@ -90,17 +90,52 @@
     </a>
 </div>
 <!--/CARROSEL -->
+
+
 <!-- Jumbotron -->
 <div class="jumbotron bg-white d-flex justify-content-center p-5">
     <div>
         <h1 class="display-4 focus-in-contract-bck">Conheça os produtos</h1>
     </div>
 </div>
+
 <div class="container">
     <!-----Primeiro Cards Roupas----->
     <h5 class="ml-5"> <img src="https://i.imgur.com/vCDGKEZ.png" height="40px" width="150px"> </h5>
     <hr class="mb-4">
-    
+
+    <!-- <div class="container-fluid tamanho-container" style="margin-top:50px;">
+        <div class="row d-flex justify-content-center">
+
+            <div *ngFor="let item of listaProduto" class="col-md-3 largura-col">
+               
+                <div *ngIf="item.categoria.descricao == 'roupas'" class="bottom">
+                    <div class="card-sl card-list-margin tamanhdo-do-card animacao-card">
+                        <div class="card-image tamanhdo-imagem">
+                            <img class="img-fluid testando" src="{{item.foto}}" />
+                        </div>
+
+                        <a class="card-action" href="#"><i class="fa fa-heart"></i></a>
+                        <div class="card-heading card-cabeca">
+                            <h5 class="card-title">{{item.nome}}</h5>
+                        </div>
+                        <div class="card-text tamanhdo-descricao ">
+                            {{item.descricao}}
+                        </div>
+                        <div class="card-text">
+                            R$: {{item.preco}}
+                        </div>
+                        <a [routerLink]="['/comprar', item.id]" class="card-button card-font card-btn-color">
+                            Comprar</a>
+                    </div>
+                </div>
+                
+            </div>
+
+
+        </div>
+    </div> -->
+    <!-- ANTIGOOOOOOOOOOOOOOO -->
     <div class="container mb-2">
         <div class="row">
             <div class="card-group col-md-12 d-flex justify-content-left ml-2">
@@ -120,6 +155,7 @@
             </div>
         </div>
     </div>
+
     <!---------segundo Cards Oculos----->
     <div class="container mt-5">
         <h5 class="ml-5"> <img src="https://i.imgur.com/8JHvwf5.png" height="38px" width="150px"> </h5>
@@ -136,7 +172,8 @@
                         <p class="card-text">R$: {{item.preco}}</p>
                         <!-- Button trigger modal -->
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-color a" data-toggle="modal" data-target="#exampleModal"  [routerLink]="['/comprar', item.id]">
+                        <button type="button" class="btn btn-color a" data-toggle="modal" data-target="#exampleModal"
+                            [routerLink]="['/comprar', item.id]">
                             Comprar </button>
                     </div>
                 </div>
@@ -383,4 +420,3 @@
     </div>
 </div>
 <app-rodape></app-rodape>
-
