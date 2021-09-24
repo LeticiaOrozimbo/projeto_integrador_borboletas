@@ -38,5 +38,13 @@ export class ComprarComponent implements OnInit {
       this.produto = resp
     })
   }
+  apagar(){
+    this.produtoService.deletarPorId(this.idProduto).subscribe(()=>{
+      
+      
+      alert('Produto comprado com sucesso!')
+      this.router.navigate(['/produto'])
+    })
+  }
 
 }

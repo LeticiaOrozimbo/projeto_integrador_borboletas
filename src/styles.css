@@ -25,4 +25,15 @@ body {
     padding: 0;
     margin: 0;
 }
+.btn-color {
+  background-color: #7756b8;
+  color: white;
+  font-family: 'Popins';
+}
+
+.a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Poppins';
+}
 
