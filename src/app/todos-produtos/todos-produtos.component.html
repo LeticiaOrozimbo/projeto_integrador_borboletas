@@ -24,9 +24,10 @@
                             <div class="input-group roundedg">
 
 
-                                <input type="search" class="form-control jumbotron-input" value="Todos os produtos"
+                                <input type="search" class="form-control jumbotron-input" placeholder="Busque"
                                     aria-label="Search" aria-describedby="search-addon" />
-                                <span class="input-group-text  jumbotron-input-span" id="search-addon">
+
+                                <span class="input-group-text jumbotron-input-span" id="search-addon">
                                     <i class="fas fa-search"></i>
                                 </span>
                             </div>
@@ -46,182 +47,183 @@
 </div>
 
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <h3>As melhores ofertas</h3>
-        </div>
+<div class="jumbotron jumbotron-fluid corpo-jumbotron">
+    <div class="">
+        <h5 class="display-6">As melhores ofertas</h5>
     </div>
 </div>
 
 <!-- LISTA DE TODOS OS PRODUTOS -->
 
-<div class="container-fluid tamanho-container" style="margin-top:50px;">
+<div class="container-fluid tamanho-container">
     <div class="row d-flex justify-content-center">
 
         <div *ngFor="let item of listaProduto" class="col-md-3 largura-col">
             <!-- <div class="col-md-3  "> -->
 
-                <div class="card-sl card-list-margin tamanhdo-do-card animacao-card">
-                    <div class="card-image tamanhdo-imagem">
-                        <img class="img-fluid testando"
-                            src="{{item.foto}}" />
-                    </div>
-
-                    <a class="card-action" href="#"><i class="fa fa-heart"></i></a>
-                    <div class="card-heading card-cabeca">
-                        <h5 class="card-title">{{item.nome}}</h5>
-                    </div>
-                    <div class="card-text tamanhdo-descricao ">
-                        {{item.descricao}}
-                    </div>
-                    <div class="card-text">
-                        R$: {{item.preco}}
-                    </div>
-                    <a [routerLink]="['/comprar', item.id]" class="card-button card-font card-btn-color"> Comprar</a>
+            <div class="card-sl card-list-margin tamanhdo-do-card animacao-card">
+                <div class="card-image tamanhdo-imagem">
+                    <img class="img-fluid testando" src="{{item.foto}}" />
                 </div>
+
+                <a class="card-action" href="#"><i class="fa fa-heart"></i></a>
+                <div class="card-heading card-cabeca">
+                    <h5 class="card-title">{{item.nome}}</h5>
+                </div>
+                <div class="card-text tamanhdo-descricao ">
+                    {{item.descricao}}
+                </div>
+                <div class="card-text">
+                    R$: {{item.preco}}
+                </div>
+                <a [routerLink]="['/comprar', item.id]" class="card-button card-font card-btn-color"> Comprar</a>
+            </div>
 
             <!-- </div> -->
         </div>
-
-
     </div>
 </div>
 
 
+<div class="jumbotron jumbotron-fluid corpo-jumbotron">
+    <div class="">
+        <h5 class="display-6">Descubra mais</h5>
+    </div>
+</div>
 
 <div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <h4>Categorias</h4>
-        </div>
-    </div>
-
     <!-- LISTA DAS CATEGORIAS -->
-    <div class="row mb-4">
 
-        <div class="col-md-4">
+    <div data-aos="fade-right">
+        <div class="row mb-4">
 
-            <!-- CARDS CATEGORIA -->
-            <a href="" class="categorias-link">
-                <div class="card teste">
+            <div class="col-md-4">
 
-                    <div class="card-body corpo-card">
-                        <img src="https://i.imgur.com/35p5t11.png" class="card-img-top img-fluid" alt="..." />
+                <!-- CARDS CATEGORIA -->
+                <a href="" class="categorias-link">
+                    <div class="card teste">
 
-                        <div class="mb-3">
-                            <h5 class="card-title text-center">Moda</h5>
+                        <div class="card-body corpo-card">
+                            <img src="https://i.imgur.com/35p5t11.png" class="card-img-top img-fluid" alt="..." />
+
+                            <div class="mb-3">
+                                <h5 class="card-title text-center">Moda</h5>
+                            </div>
                         </div>
-                    </div>
 
-                </div>
-            </a>
-            <!-- CARDS CATEGORIA -->
+                    </div>
+                </a>
+                <!-- CARDS CATEGORIA -->
+
+            </div>
+
+            <div class="col-md-4">
+
+                <!-- CARDS CATEGORIA -->
+                <a href="" class="categorias-link">
+                    <div class="card teste">
+
+                        <div class="card-body corpo-card">
+                            <img src="https://i.imgur.com/35p5t11.png" class="card-img-top img-fluid" alt="..." />
+
+                            <div class="mb-3">
+                                <h5 class="card-title text-center">Eletrônicos</h5>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+                <!-- CARDS CATEGORIA -->
+
+            </div>
+
+            <div class="col-md-4">
+
+                <!-- CARDS CATEGORIA -->
+                <a href="" class="categorias-link">
+                    <div class="card teste">
+
+                        <div class="card-body corpo-card">
+                            <img src="https://i.imgur.com/pLIWX8I.jpg" class="card-img-top img-fluid" alt="..." />
+
+                            <div class="mb-3">
+                                <h5 class="card-title text-center">Beleza</h5>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+                <!-- CARDS CATEGORIA -->
+            </div>
 
         </div>
-        <div class="col-md-4">
-
-            <!-- CARDS CATEGORIA -->
-            <a href="" class="categorias-link">
-                <div class="card teste">
-
-                    <div class="card-body corpo-card">
-                        <img src="https://i.imgur.com/35p5t11.png" class="card-img-top img-fluid" alt="..." />
-
-                        <div class="mb-3">
-                            <h5 class="card-title text-center">Eletrônicos</h5>
-                        </div>
-                    </div>
-
-                </div>
-            </a>
-            <!-- CARDS CATEGORIA -->
-
-        </div>
-        <div class="col-md-4">
-
-            <!-- CARDS CATEGORIA -->
-            <a href="" class="categorias-link">
-                <div class="card teste">
-
-                    <div class="card-body corpo-card">
-                        <img src="https://i.imgur.com/pLIWX8I.jpg" class="card-img-top img-fluid" alt="..." />
-
-                        <div class="mb-3">
-                            <h5 class="card-title text-center">Beleza</h5>
-                        </div>
-                    </div>
-
-                </div>
-            </a>
-            <!-- CARDS CATEGORIA -->
-        </div>
-
     </div>
 
-    <div class="row">
+    <div data-aos="fade-left">
+        <div class="row">
 
-        <div class="col-md-4">
+            <div class="col-md-4">
 
-            <!-- CARDS CATEGORIA -->
-            <a href="" class="categorias-link">
-                <div class="card teste">
+                <!-- CARDS CATEGORIA -->
+                <a href="" class="categorias-link">
+                    <div class="card teste">
 
-                    <div class="card-body corpo-card">
-                        <img src="https://i.imgur.com/M4J3qwr.jpg" class="card-img-top img-fluid" alt="..." />
+                        <div class="card-body corpo-card">
+                            <img src="https://i.imgur.com/M4J3qwr.jpg" class="card-img-top img-fluid" alt="..." />
 
-                        <div class="mb-3">
-                            <h5 class="card-title text-center">Casa e decoração</h5>
+                            <div class="mb-3">
+                                <h5 class="card-title text-center">Casa e decoração</h5>
+                            </div>
                         </div>
-                    </div>
 
-                </div>
-            </a>
-            <!-- CARDS CATEGORIA -->
+                    </div>
+                </a>
+                <!-- CARDS CATEGORIA -->
+
+            </div>
+            <div class="col-md-4">
+
+                <!-- CARDS CATEGORIA -->
+                <a href="" class="categorias-link">
+                    <div class="card teste">
+
+                        <div class="card-body corpo-card">
+                            <img src="https://i.imgur.com/35p5t11.png" class="card-img-top img-fluid" alt="..." />
+
+                            <div class="mb-3">
+                                <h5 class="card-title text-center">Acessórios</h5>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+                <!-- CARDS CATEGORIA -->
+
+            </div>
+            <div class="col-md-4">
+
+                <!-- CARDS CATEGORIA -->
+                <a href="" class="categorias-link">
+                    <div class="card teste">
+
+                        <div class="card-body corpo-card">
+                            <img src="https://i.imgur.com/8F3Z7dH.jpg" class="card-img-top img-fluid" alt="..." />
+
+                            <div class="mb-3">
+                                <h5 class="card-title text-center">Produtos e Objetos</h5>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+                <!-- CARDS CATEGORIA -->
+            </div>
 
         </div>
-        <div class="col-md-4">
-
-            <!-- CARDS CATEGORIA -->
-            <a href="" class="categorias-link">
-                <div class="card teste">
-
-                    <div class="card-body corpo-card">
-                        <img src="https://i.imgur.com/35p5t11.png" class="card-img-top img-fluid" alt="..." />
-
-                        <div class="mb-3">
-                            <h5 class="card-title text-center">Acessórios</h5>
-                        </div>
-                    </div>
-
-                </div>
-            </a>
-            <!-- CARDS CATEGORIA -->
-
-        </div>
-        <div class="col-md-4">
-
-            <!-- CARDS CATEGORIA -->
-            <a href="" class="categorias-link">
-                <div class="card teste">
-
-                    <div class="card-body corpo-card">
-                        <img src="https://i.imgur.com/8F3Z7dH.jpg" class="card-img-top img-fluid" alt="..." />
-
-                        <div class="mb-3">
-                            <h5 class="card-title text-center">Produtos e Objetos</h5>
-                        </div>
-                    </div>
-
-                </div>
-            </a>
-            <!-- CARDS CATEGORIA -->
-        </div>
-
     </div>
 
 </div>
-<br>
+
 
 <!-- <div class="container">
     <div class="row mt-4">
@@ -265,3 +267,27 @@
     </div>
 
 </div> -->
+
+<!-- CAROUSEL CARDS -->
+
+
+
+  <!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
