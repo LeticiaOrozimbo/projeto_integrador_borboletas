@@ -20,8 +20,18 @@
                             </div>
                             <!-- /TITULO -->
 
+
+                            <div class="row d-flex justify-content-center mt-5 mb-5">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="nome" placeholder="Digite o nome do produto que deseja pesquisar" [(ngModel)]='nomePost' (keyup)='findByNome()'>
+                                    </div>
+                                </div>
+                            </div>
+
+
                             <!-- PESQUISAR -->
-                            <div class="input-group roundedg">
+                            <!-- <div class="input-group roundedg">
 
 
                                 <input type="search" class="form-control jumbotron-input" placeholder="Busque"
@@ -30,7 +40,7 @@
                                 <span class="input-group-text jumbotron-input-span" id="search-addon">
                                     <i class="fas fa-search"></i>
                                 </span>
-                            </div>
+                            </div> -->
                             <!-- PESQUISAR -->
 
 
