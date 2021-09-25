@@ -10,6 +10,7 @@ import { ProdutoService } from '../service/produto.service';
 export class InicioComponent implements OnInit {
 
   listaProduto: Produto[]
+  nomePost: string
   
   constructor(
     private produtoService: ProdutoService,
@@ -25,5 +26,16 @@ export class InicioComponent implements OnInit {
       console.log("lista produto" + this.listaProduto)
     })
   }
+  findByNome(){
+    if(this.nomePost == ''){
+      this.buscarTodosProdutos()
+    } else {
+      this.produtoService.buscarPorNome(this.nomePost).subscribe((resp: Produto[]) => {
+        this.listaProduto = resp
+      })
+    }
+  }
+
+
 
 }

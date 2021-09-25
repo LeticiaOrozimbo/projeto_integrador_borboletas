@@ -9,18 +9,7 @@
     border-radius: 15px;
     padding-left: 20px;
     height: 40px;
-    /* background-color: var(--search-box-bg, white);
-    border: none;
-    border-radius: calc(0.5 * var(--ntp-realbox-height));
-    color: var(--search-box-text);
-    font-family: inherit;
-    font-size: inherit;
-    height: 100%;
-    outline: none;
-    padding-inline-end: 44px;
-    padding-inline-start: 52px;
-    position: relative;
-    width: 100%; */
+    
 }
 
 .jumbotron-input-span {
@@ -32,16 +21,6 @@
     width: 100%;
 }
 
-.jb-titulo {
-    margin-bottom: 20px;
-}
-
-/* Categorias CARDS */
-
-.categorias-link {
-    text-decoration: none;
-    color: black;
-}
 
 .card-altura {
     height: 20px;
@@ -67,7 +46,14 @@
 .card-produto-corpo {
     margin: 5px;
     border: 1px solid gray;
-    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Categorias CARDS */
+
+.categorias-link {
+    text-decoration: none;
+    radius: 10px;
 }
 
 .card-borboletas-projeto-link {
