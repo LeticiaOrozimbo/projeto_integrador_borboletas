@@ -32,16 +32,6 @@
     width: 100%;
 }
 
-.jb-titulo {
-    margin-bottom: 20px;
-}
-
-/* Categorias CARDS */
-
-.categorias-link {
-    text-decoration: none;
-    color: black;
-}
 
 .card-altura {
     height: 20px;
@@ -67,7 +57,14 @@
 .card-produto-corpo {
     margin: 5px;
     border: 1px solid gray;
-    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Categorias CARDS */
+
+.categorias-link {
+    text-decoration: none;
+    radius: 10px;
 }
 
 .card-borboletas-projeto-link {

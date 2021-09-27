@@ -10,6 +10,7 @@ import { ProdutoService } from '../service/produto.service';
 export class TodosProdutosComponent implements OnInit {
 
   listaProduto: Produto[]
+  nomePost: string
   
   constructor(
     private produtoService: ProdutoService,
@@ -19,11 +20,22 @@ export class TodosProdutosComponent implements OnInit {
     this.buscarTodosProdutos();
   }
 
-  buscarTodosProdutos() {
+   buscarTodosProdutos() {
     this.produtoService.buscarTodosProdutos().subscribe((resp: Produto[]) => {
       this.listaProduto = resp
-      console.log("lista produto" + this.listaProduto)
-    })
+       console.log("lista produto" + this.listaProduto)
+     })
+   }
+  findByNome(){
+    if(this.nomePost == ''){
+      this.buscarTodosProdutos()
+    } else {
+      this.produtoService.buscarPorNome(this.nomePost).subscribe((resp: Produto[]) => {
+        this.listaProduto = resp
+      })
+    }
   }
+
+
 
 }
