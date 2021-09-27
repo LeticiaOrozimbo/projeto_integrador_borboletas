@@ -28,13 +28,14 @@ export class CadastrarComponent implements OnInit {
 
   tipoUser(event: any){
     this.tipoUsuario = event.target.value
+    
   }
 
   cadastrar(){
     this.usuario.tipo = "o"
 
     if(this.usuario.senha != this.confirmarSenha){
-      alert('A senhas estão incorretas.')
+      alert('As senhas estão incorretas.')
     } else {
       this.authService.cadastrar(this.usuario).subscribe((resp: Usuario) => {
         this.usuario = resp
