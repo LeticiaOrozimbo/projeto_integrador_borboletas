@@ -29,6 +29,12 @@
     color: white;
 }
 
+.button-apagar:hover {
+    background-color: rgb(255, 57, 57);
+    color: white;
+}
+
+
 input {
     padding: 10px;
     max-width: 100%;
