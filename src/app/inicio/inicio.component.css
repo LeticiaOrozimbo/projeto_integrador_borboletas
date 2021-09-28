@@ -599,3 +599,7 @@ a {
     max-height: 10px;
     background-color: #fff;
 }
+
+.borda {
+    border-radius: 16px;
+}
